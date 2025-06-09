@@ -1,0 +1,361 @@
+;===============================================================================
+; Title: Clock
+;
+; Author: Rob Jansen, Copyright (c) 2018 .. 2018, all rights reserved.
+;
+; Revisions
+; ---------
+; 2018-05-05 : Initial version.
+; 2018-06-03 : Added test program at power up.
+; 2018-07-08 : Version 2 using DS1302 RTC chip for more accurate clock.
+; 2018-07-09 : Version 3 using DS3231 RTC chip for more accurate clock.
+;
+; Compiler: jalv24q6
+;
+; Description: Analog/Digital Clock using 60 Dual Color LEDs.
+;
+; Sources: -
+;
+; ================================ Pragmas ====================================
+ ; Compiler pragmas.
+Pragma warn backend no
+Pragma warn conversion yes
+Pragma warn directives no
+Pragma warn misc yes
+Pragma warn range yes
+Pragma warn stack_overflow yes
+Pragma warn truncate yes
+Pragma opt variable_reduce yes
+
+; This uses the 32 MHz internal oscillator.
+Pragma target clock 32_000_000   ; Oscillator frequency 32 MHz
+
+include 16f1823                  ; target PICmicro
+include Clock_Defs
+include DS3231_RTC
+include Clock_Driver
+include Clock_Multiplexer
+
+; Configuration memory settings (fuses). These are only a selection, sufficient
+; for this program.
+pragma target OSC      INTOSC_NOCLKOUT ; Internal Clock
+Pragma target PLLEN    ENABLED         ; PLL on to get 32 MHz
+Pragma target WDT      DISABLED        ; No Watchdog
+Pragma target PWRTE    ENABLED         ; Power up timer enabled
+Pragma target BROWNOUT DISABLED        ; No brownout reset
+Pragma target FCMEN    DISABLED        ; No clock monitoring
+Pragma target IESO     DISABLED        ; int/ext osc. switch
+Pragma target LVP      DISABLED        ; No low voltage programming
+Pragma target MCLR     INTERNAL        ; Reset internal
+; Set the internal clock frequency to 32 MHz.
+OSCCON_IRCF   = 0b1110                 ; Set 32 MHz (uses 8 MHz source)
+OSCCON_SCS    = 0b00                   ; Clock determined by FOSC (32 MHz)
+
+; Enable weak pull up for all unused ports since some inputs are not connected
+WPUA = 0b0011_1111       ; Weak pull-up for open pins port A and IIC pins.
+WPUC = 0b0000_0000       ; No weak pull-up for port C, all used.
+OPTION_REG_WPUEN = FALSE ; Enable Weak Pull-Up
+
+; ================================ Pins =======================================
+; Make all pins digital I/O
+enable_digital_io()
+
+; ================== Constant and variable declarations =======================
+const byte PROGRAM_TIMEOUT = 5  ; Programming off after 5 seconds not used.
+
+var byte program_timer
+var byte new_seconds
+var byte new_minutes
+var byte new_hours
+
+var bit key_released
+var bit second_passed
+var bit toggle_seconds_LED
+var bit program_mode_active
+
+; ========================= Functions and Procedures ==========================
+procedure seconds_init() is
+; Initialize the external interrupt. This one gets a pulse every second.
+  second_passed = FALSE
+  INTCON_INTF = FALSE
+  INTCON_INTE = TRUE
+  INTCON_GIE  = TRUE
+end procedure ; seconds_init
+
+procedure seconds_interrupt() is pragma interrupt
+; Seconds pulse is connected to the external interrupt.
+  if INTCON_INTF then
+    INTCON_INTF = FALSE
+    second_passed = TRUE
+  end if
+end procedure ; seconds_interrupt
+
+procedure display_clear() is
+; Initialize the global variable 'display' to all LEDs off, clearing the display.
+var byte index
+  for MAX_LEDS using index loop
+    display[index] = LED_OFF
+  end loop
+end procedure ; display_clear
+
+procedure display_conversion() is
+; Convert the hours, minutes and seconds to the format as we want it to be
+; displayed.
+var byte counter
+var byte display_hours
+var byte leds_on
+  ; Update the display with the new values.
+  counter = 0
+  ; We need to map the current hours to the LED display same as minutes.
+  if (hours == MAX_HOURS) then
+    display_hours = 0
+  else
+    display_hours = hours * 5
+  end if
+  if (display_hours > minutes) then
+    ; Minutes first (green), rest is hours (red)
+    for minutes + 1 loop
+      display[counter] = LED_GREEN
+      counter = counter + 1
+    end loop
+    for (display_hours - minutes) loop
+      display[counter] = LED_RED
+      counter = counter + 1
+    end loop
+  elsif (minutes > display_hours) then
+    ; Hours first (red), rest is minutes (green)
+    for display_hours + 1 loop
+      display[counter] = LED_RED
+      counter = counter + 1
+    end loop
+    for (minutes - display_hours) loop
+      display[counter] = LED_GREEN
+      counter = counter + 1
+    end loop
+  else
+    ; Hours and minutes equal, all yellow.
+    for display_hours + 1 loop
+      display[counter] = LED_YELLOW
+      counter = counter + 1
+    end loop
+  end if
+  ; All remaining LEDs must be off.
+  leds_on = counter
+  for (MAX_LEDS - leds_on) loop
+    display[counter] = LED_OFF
+    counter = counter + 1
+  end loop
+  ; We have to indicate the hours since there is no indication on the clock but
+  ; only when the LED is not green. If minutes are on we make it yellow and when
+  ; it is yellow it stays yellow.
+  counter = 0
+  for MAX_HOURS loop
+    if (display[counter] == LED_GREEN) | (display[counter] == LED_YELLOW) then
+      display[counter] = LED_YELLOW
+    else
+      display[counter] = LED_RED
+    end if
+      counter = counter + 5
+  end loop
+  ; The seconds are indicated with yellow but if the LED is already yellow we
+  ; turn it off. Skip this when program mode is active otherwise we cannot
+  ; set the time correctly.
+  if !program_mode_active then
+    if (display[seconds] == LED_YELLOW) then
+      display[seconds] = LED_OFF
+    else
+      ; LED is off, make it yelloe to show the seconds.
+      display[seconds] = LED_YELLOW
+    end if
+  end if ; !program_mode_active
+end procedure ; display_conversion
+
+procedure delay_1_s() is
+  _usec_delay(1_000_000)
+end procedure
+
+procedure delay_30_ms() is
+  _usec_delay(30_000)
+end procedure
+
+procedure delay_300_ms() is
+  _usec_delay(300_000)
+end procedure
+
+procedure test_cycle() is
+; Test all LEDs in order red, green and yellow and some other patterns. This
+; routine never ends.
+var byte index
+  Seconds_LED = TRUE ; Put on to indicate test cycle.
+  forever loop
+    ; Start with all LEDs off.
+    display_clear()
+    ; Do the red LEDs and build it up.
+    for MAX_LEDS using index loop
+      display[index] = LED_RED
+      delay_30_ms()
+    end loop
+    delay_1_s()
+    display_clear()
+    ; Do the green LEDs and build it up
+    for MAX_LEDS using index loop
+      display[index] = LED_GREEN
+      delay_30_ms()
+    end loop
+    delay_1_s()
+    display_clear()
+    ; Do both LEDs and build it up
+    for MAX_LEDS using index loop
+      display[index] = LED_YELLOW
+      delay_30_ms()
+    end loop
+    delay_1_s()
+    display_clear()
+    ; Do red LEDs one at a time.
+    for MAX_LEDS using index loop
+      display[index] = LED_RED
+      delay_300_ms()
+      display[index] = LED_OFF
+    end loop
+    display_clear()
+    ; Do green LEDs one at a time.
+    for MAX_LEDS using index loop
+      display[index] = LED_GREEN
+      delay_300_ms()
+      display[index] = LED_OFF
+    end loop
+    display_clear()
+    ; Do both LEDs one at a time.
+    for MAX_LEDS using index loop
+      display[index] = LED_YELLOW
+      delay_300_ms()
+      display[index] = LED_OFF
+    end loop
+  end loop ; forever
+end procedure ; test_cycle
+
+; ========================= Main program starts here ==========================
+; Start with a delay to settle.
+_usec_delay(100_000)
+Seconds_LED = TRUE
+display_clear()
+driver_init()
+multiplexer_init()
+rtc_init()
+seconds_init()
+
+Seconds_LED = FALSE
+toggle_seconds_LED = FALSE
+program_timer = 0
+program_mode_active = FALSE
+
+; Test if both switches are pressed.
+if !hour_switch & !minute_switch then
+  _usec_delay(100_000) ; Debounce but use a larger debounce time.
+  if !hour_switch & !minute_switch then
+    ; OK, they are pressed, start the test cycle which never ends by the way.
+    test_cycle()
+  end if
+end if
+
+; No test cycle, initialize the time and other variables.
+if rtc_get_time(new_hours, new_minutes, new_seconds) then
+  ; Read succesful. Reading takes about 1.5 ms
+  hours = new_hours
+  minutes = new_minutes
+  seconds = new_seconds
+else
+  hours = MIN_HOURS
+  minutes = 0
+  seconds = 0
+  Seconds_LED = TRUE ; Indicate IIC Error.
+end if
+
+forever loop
+  test_pin_2 = TRUE
+
+  if second_passed then
+    second_passed = FAlSE
+    toggle_seconds_LED = !toggle_seconds_LED
+    ; Check if we have to switch off the program mode and update the clock.
+    if (program_timer == 0) then
+      ; If we were in program mode we will set the new time once.
+      if program_mode_active then
+        if rtc_set_time(hours, minutes, seconds) then
+          Seconds_LED = FALSE
+          program_mode_active = FALSE
+        else
+          ; Something went wrong, reset hours. Program LED stays on.
+          hours = MIN_HOURS
+          minutes = 0
+          seconds = 0
+        end if
+      end if ; progam_mode_active
+    else
+      program_timer = program_timer - 1
+    end if ; program_timer
+
+    ; Only when program mode is not active we will update the time.
+    if !program_mode_active then
+      ; Update the time.
+      if rtc_get_time(new_hours, new_minutes, new_seconds) then
+        ; Read succesful. Reading takes about 1.5 ms
+        hours = new_hours
+        minutes = new_minutes
+        seconds = new_seconds
+      end if
+      ; Convert new data for the display.
+      display_conversion()
+    end if ; !program_mode
+  end if ; second_passed
+
+  ; Handle the switches.
+  if !hour_switch | !minute_switch then
+    program_timer = PROGRAM_TIMEOUT  ; Set programming timeout.
+    _usec_delay(50_000) ; Key debounce 50 ms.
+    ; We only do something if the switch was released before.
+    if key_released then
+      key_released = FALSE
+      ; Both switches pressed will enable the program mode.
+      if !hour_switch & !minute_switch then
+        program_mode_active = TRUE
+        Seconds_LED = TRUE ; Continuous on to show program mode active.
+      else
+        ; Only one switch pressed, this only does something if we are in
+        ; program mode.
+        if program_mode_active then
+          seconds = 0 ; Prevents extra minute when stopping programming.
+          if !hour_switch then
+            if (hours == MAX_HOURS) then
+              hours = MIN_HOURS
+            else
+              hours = hours + 1
+            end if
+          end if ; !hour_switch
+          if !minute_switch then
+            ; Increment the minutes.
+            if (minutes == 59) then
+              minutes = 0
+            else
+              minutes = minutes + 1
+            end if ; minutes
+          end if ; !minutes_switch
+          ; Convert new data for the display.
+         display_conversion()
+        end if ; program_mode_active
+      end if ; !hour_switch & !minutes_switch
+    end if ; key_released
+  end if ; !hour_switch | !minutes_switch
+
+  ; Check for key release.
+  if hour_switch & minute_switch then
+    key_released = TRUE
+  end if
+
+  if !program_mode_active then
+    Seconds_LED = toggle_seconds_LED
+  end if
+  
+  test_pin_2 = FALSE
+end loop
+

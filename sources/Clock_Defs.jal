@@ -1,0 +1,68 @@
+;===============================================================================
+; Title: Clock Definitions
+;
+; Author: Rob Jansen, Copyright (c) 2018 .. 2018, all rights reserved.
+;
+; Revisions
+; ---------
+; 2018-05-05 : Initial version.
+; 2018-07-09 : Update for RTC DS3231.
+;
+; Compiler: jalv24q6
+;
+; Description: Some global definitions for the clock routines.
+;
+; Sources: -
+;
+; =================================== Pins =====================================
+
+; Specify connected SPI IO-pins for controlling the Shift Register that controls
+; the 60 LEDs.
+alias shift_clock  is pin_C0 ; Pin 10. Shift register clock, via SPIO.
+pin_C0_direction  =  output
+alias shift_store  is pin_C1 ; Pin 9. Shift Store, moving bits to SR output pin.
+pin_C1_direction  =  output
+alias shift_data   is pin_C2 ; Pin 8. Shift register Data, via SPIO.
+pin_C2_direction  =  output
+alias shift_reset  is pin_C3 ; Pin 7. Shift reset. Active Low.
+pin_C3_direction  =  output
+
+; Connection of the 'Seconds' LED. It is active high. Also used to indicate
+; the program mode.
+alias Seconds_LED is pin_C4   ; Pin 6
+pin_C4_direction =  OUTPUT
+; Connected Switches, active Low
+alias minute_switch is Pin_C5 ; Pin 5
+Pin_C5_Direction = INPUT
+alias hour_switch is Pin_A3   ; Pin 4
+Pin_A3_Direction = INPUT
+
+; IIC pin connections.
+alias i2c_sda is pin_a4       ; Pin 3. I/O
+alias i2c_sda_direction is pin_a4_direction
+alias i2c_scl is pin_a5       ; Pin 2. Clock
+alias i2c_scl_direction is pin_a5_direction
+
+alias test_pin_1 is pin_A1   ; Pin 12
+pin_A1_direction =  OUTPUT
+alias test_pin_2 is pin_A0   ; Pin 13
+pin_A0_direction =  OUTPUT
+
+; ==================== Constant and variable declarations ======================
+const byte MAX_LEDS   = 60
+const byte MAX_HOURS  = 12
+const byte MIN_HOURS  = 1
+const byte LED_OFF    = 0
+const byte LED_RED    = 1
+const byte LED_GREEN  = 2
+const byte LED_YELLOW = 3
+
+var byte display[MAX_LEDS] ; 0 = off, 1 = red, 2 = green, 3 = yellow
+var byte hours       ; Hours are from 1..12.
+var byte minutes     ; Minutes are fron 0 to 59.
+var byte seconds     ; Seconds are from 0 to 59.
+var byte scan_red    ; Holds the Shift Register data for the Red Scan Line
+var byte scan_green  ; Holds the Shift Register data for the Green Scan Line
+var byte return_both ; Holds the Shift Register data for both Return Line
+
+

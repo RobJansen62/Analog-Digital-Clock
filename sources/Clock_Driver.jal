@@ -1,0 +1,124 @@
+;===============================================================================
+; Title: Clock Driver
+;
+; Author: Rob Jansen, Copyright (c) 2018 .. 2018, all rights reserved.
+;
+; Revisions
+; ---------
+; 2018-05-05 : Initial version.
+;
+; Description: The SPI interface is used to control and multiplex 60 LEDs
+;              using three external shift register.
+
+; Sources: -
+;
+; ================== Constant and variable declarations =======================
+include Clock_Defs
+ 
+; Display constant and variable declarations.
+var byte driver_state
+
+; ========================= Functions and Procedures ==========================
+procedure driver_init() is
+; Initialize the SPI interface and the external Shift Registers that control
+; the 60 LEDs.
+  shift_reset = FALSE     ; Clear Shift Registers.
+  shift_store = FALSE     ; Reset line for storing shift data .
+  ; Intialize the SPI for controlling the Shift Registers
+  APFCON = 0b0000_0000     ; SDO on RC2 (default bit 6 = 0)
+  ; Set Serial Connection Control Register. SSP1CON2 and SSP1CON3 are not
+  ; relevant since used for IIC or reading via SPI what we do not use.
+  SSP1CON1_SSPEN = FALSE   ; Disable SPI while configuring.
+  SSP1CON1_SSPM  = 0b0001  ; Use Fosc/16 = 2 Mhz Clock.
+  ; Set clock mode of SPI so that Data is clocked in SR when clock line goes up
+  ; that is CKP = 0 and CKE = 1.
+  SSP1CON1_CKP = FALSE
+  SSPSTAT_CKE  = TRUE
+  ; All LEDs off.
+  scan_red = 0x00
+  scan_green = 0x00
+  return_both = 0x00
+  driver_state = 0
+  PIR1_SSPIF = FALSE     ; Clear SPI interrupt flag
+  shift_reset = TRUE     ; Enable Shift Registers, disable reset
+  SSP1CON1_SSPEN = TRUE  ; Enable SPI
+  PIE1_SSP1IE = TRUE ; Enable Serial Interrupt.
+  INTCON_PEIE = TRUE ; Enable peripheral interrupts.
+  INTCON_GIE  = TRUE ; Enable global interrupts.
+end procedure ; driver_init
+
+procedure _driver_interrupt() is pragma interrupt
+; Interrupt occured, check if SPI interrupt occured. If so then this driver
+; will complete one to tranfer the data for the scan and return lines for both
+; the red and green LEDs, one shift transfer per interrupt until all are 3
+; shift registers are done.
+  if PIR1_SSPIF then
+    PIR1_SSPIF = FALSE
+
+    case driver_state of
+
+      0:
+      block
+        ; First write a value that disables all LEDs. This is needed to limit
+        ; the cross talk between the LEDs.
+        SSP1BUF = 0x00 ; Return lines off.
+        driver_state = driver_state + 1
+      end block
+
+      1:
+      block
+        ; Cross talk limitation, disable green.
+        SSP1BUF = 0x00 ; Green scan lines off.
+        driver_state = driver_state + 1
+      end block
+
+      2:
+      block
+        ; Cross talk limitation, disable red
+        SSP1BUF = 0x00 ; Red scan lines off.
+        driver_state = driver_state + 1
+      end block
+
+      3:
+      block
+        ; Store the values.
+        shift_store = TRUE ; New data of SR appear on the output of the SR.
+        driver_state = driver_state + 1
+        shift_store = FALSE
+        SSP1BUF = 0x00 ; Dummy write to keep the interrupt going.
+      end block
+
+      4:
+      block
+        ; Write return line used for both LEDs.
+        SSP1BUF = return_both
+        driver_state = driver_state + 1
+      end block
+
+      5:
+      block
+        ; Write scan line for green LEDs.
+        SSP1BUF = scan_green
+        driver_state = driver_state + 1
+      end block
+
+      6:
+      block
+        ; Write scan line for red LEDs.
+        SSP1BUF = scan_red
+        driver_state = driver_state + 1
+      end block
+
+      7:
+      block
+        ; Store the values.
+        shift_store = TRUE ; New data of SR appear on the output of the SR.
+        driver_state = 0   ; Done with this cycle. No interrupt anymore too.
+        shift_store = FALSE
+      end block
+
+    end case
+  end if ; PIR1_SSPIF
+end procedure ; _driver_interrupt
+
+

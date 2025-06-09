@@ -1,0 +1,232 @@
+;===============================================================================
+; Title: Clock Multiplezser
+;
+; Author: Rob Jansen, Copyright (c) 2018 .. 2018, all rights reserved.
+;
+; Revisions
+; ---------
+; 2018-05-05 : Initial version.
+; 2018-07-09 : Modified due to clock change from 20 MHz to 32 MHz.
+;
+; Compiler: jalv24q6
+;
+; Description: Timer 1 drives all 60 dual color LEDs by multiplexing, using a
+;              matrix of 16 scan lines, 8 for Red and 8 for Green and 8 return
+;              lines. The data is written to shift registers using the SPI
+;              interface.
+;
+; Sources:
+;
+; ================== Constant and variable declarations =======================
+include Clock_Defs
+
+const word TIMER1_RELOAD  = 65536 - 893 ; Gives 1120 Hz.
+
+; LED multipler, controlled via Timer 1.
+var byte mux_state    ; State machine variable for multiplexing LEDs.
+
+; ========================= Functions and Procedures ==========================
+
+procedure multiplexer_init() is
+; The idea is to run a timer to generate a 70 Hz refresh frequency since 50 Hz
+; is visible with the Human eye for LEDs. We have 16 scan lines so we need to
+; run at 16 times the frequency of 70 Hz which is 1120 Hz for one cycle.
+; Set Timer 1 to use Fosc/4, prescale 8 resulting in 1 MHz and no sync.
+; If we divide this by 893 we get 1120 Hz
+  T1CON = 0b0011_0001 ; Timer is also running.
+  TMR1 = TIMER1_RELOAD
+  mux_state = 0
+ ; Enable the relevant interrupts for the timer.
+  PIR1_TMR1IF  = FALSE
+  PIE1_TMR1IE  = TRUE
+  INTCON_PEIE  = TRUE
+  INTCON_GIE   = TRUE
+end procedure ; multiplexer_init
+
+procedure _update_red_scan_line(byte in start_led) is
+; Update the global variable scan_red depending on the values of the given lEDs
+; in the global variable 'display'.
+  scan_red = 0
+  for 8 loop
+    scan_red = scan_red >> 1
+    if (display[start_led] == LED_RED) |
+       (display[start_led] == LED_YELLOW) then
+      scan_red = scan_red | 0b1000_0000
+    end if
+    start_led = start_led + 1
+  end loop
+end procedure ; _update_red_scan_line
+
+procedure _update_green_scan_line(byte in start_led) is
+; Update the global variable scan_green depending on the values of the given lEDs
+; in the global variable 'display'.
+  scan_green = 0
+  for 8 loop
+    scan_green = scan_green >> 1
+    if (display[start_led] == LED_GREEN) |
+       (display[start_led] == LED_YELLOW) then
+      scan_green = scan_green | 0b1000_0000
+    end if
+    start_led = start_led + 1
+  end loop
+end procedure ; _update_green_scan_line
+
+procedure _multiplexer_interrupt() is pragma interrupt
+; The global variables 'scan_red', 'scan_green' and 'return_both' are filled by
+; this routine. The Red LEDs represent the hours and the Green LEDS the minutes.
+; These values are obtained from the global variables 'hours' and minutes'.
+var byte led_count
+
+  ; Interrupt occured, check if timer 1 overflowed.
+  if PIR1_TMR1IF then
+    PIR1_TMR1IF = FALSE
+    test_pin_1 = TRUE
+    TMR1 = TIMER1_RELOAD
+    ; We update the LEDs per return line, first the red and then the green. This
+    ; gives 16 states for this routine. The LEDs are connected as given in
+    ; the schematic diagram.
+    ; @32MHz this routine takes about 50 us so about 6% of the cpu load.
+
+    case mux_state of
+
+      0: ; Start of cycle for displaying red LEDS 0..7. First return line.
+      block
+        scan_green = 0  ; All green LEDs off.
+        _update_red_scan_line(0)
+        return_both = 0b0000_0001
+        mux_state = mux_state + 1
+      end block
+
+      1: ; Red LEDS 8..15. Second return line.
+      block
+        _update_red_scan_line(8)
+        return_both = 0b0000_0010
+        mux_state = mux_state + 1
+      end block
+
+      2: ; Red LEDS 15..23. Third return line.
+      block
+        _update_red_scan_line(16)
+        return_both = 0b0000_0100
+        mux_state = mux_state + 1
+      end block
+
+      3: ; Red LEDS 24..31. Fourth return line.
+      block
+        _update_red_scan_line(24)
+        return_both = 0b0000_1000
+        mux_state = mux_state + 1
+      end block
+
+      4: ; Red LEDS 32..39. Fifth return line.
+      block
+        _update_red_scan_line(32)
+        return_both = 0b0001_0000
+        mux_state = mux_state + 1
+      end block
+
+      5: ; Red LEDS 40..47. Sixth return line.
+      block
+        _update_red_scan_line(40)
+        return_both = 0b0010_0000
+        mux_state = mux_state + 1
+      end block
+
+      6: ; Red LEDS 48..55. Seventh return line.
+      block
+        _update_red_scan_line(48)
+        return_both = 0b0100_0000
+        mux_state = mux_state + 1
+      end block
+
+      7: ; Red LEDS 56..59. Eigth return line. These are only 4 LEDs (lsb's).
+      block
+        scan_red = 0
+        led_count = 56
+        for 4 loop
+          scan_red = scan_red >> 1 ; Next bit
+          if (display[led_count] == LED_RED) |
+             (display[led_count] == LED_YELLOW) then
+            scan_red = scan_red | 0b0000_1000
+          end if
+          led_count = led_count + 1
+        end loop
+        return_both = 0b1000_0000
+        mux_state = mux_state + 1
+      end block
+
+      8: ; Start of cycle for displaying red LEDS 0..7. First return line.
+      block
+        scan_red = 0  ; All red LEDs off.
+        _update_green_scan_line(0)
+        return_both = 0b0000_0001
+        mux_state = mux_state + 1
+      end block
+
+      9: ; Green LEDS 8..15. Second return line.
+      block
+        _update_green_scan_line(8)
+        return_both = 0b0000_0010
+        mux_state = mux_state + 1
+      end block
+
+      10: ; Green LEDS 15..23. Third return line.
+      block
+        _update_green_scan_line(16)
+        return_both = 0b0000_0100
+        mux_state = mux_state + 1
+      end block
+
+      11: ; Green LEDS 24..31. Fourth return line.
+      block
+        _update_green_scan_line(24)
+        return_both = 0b0000_1000
+        mux_state = mux_state + 1
+      end block
+
+      12: ; Green LEDS 32..39. Fifth return line.
+      block
+        _update_green_scan_line(32)
+        return_both = 0b0001_0000
+        mux_state = mux_state + 1
+      end block
+
+      13: ; Green LEDS 40..47. Sixth return line.
+      block
+        _update_green_scan_line(40)
+        return_both = 0b0010_0000
+        mux_state = mux_state + 1
+      end block
+
+      14: ; Green LEDS 48..55. Seventh return line.
+      block
+        _update_green_scan_line(48)
+        return_both = 0b0100_0000
+        mux_state = mux_state + 1
+      end block
+
+      15: ; Green LEDS 56..59. Eigth return line. These are only 4 LEDs (lsb's).
+      block
+        scan_green = 0
+        led_count = 56
+        for 4 loop
+          scan_green = scan_green >> 1 ; Next bit
+          if (display[led_count] == LED_GREEN) |
+             (display[led_count] == LED_YELLOW) then
+            scan_green = scan_green | 0b0000_1000
+          end if
+          led_count = led_count + 1
+        end loop
+        return_both = 0b1000_0000
+        mux_state = 0 ; Back to the start.
+      end block
+
+    End Case
+    ; New Data available, initiate SPI transmission.
+    ; Since the SPI routine runs faster than this routine, we do not have
+    ; to check for the SPI_State to be idle and we can start it immediately.
+    PIR1_SSPIF = TRUE
+    test_pin_1 = FALSE
+  end if
+end procedure ; _multiplexer_interrupt
+

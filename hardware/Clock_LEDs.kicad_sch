@@ -1,0 +1,8825 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "f74acaaf-c6f1-4404-930a-ee36ab2fff2c")
+	(paper "A4")
+	(title_block
+		(title "Clock LEDs")
+		(date "2025-06-09")
+		(rev "1.0")
+	)
+	(lib_symbols
+		(symbol "Device:LED_Dual_AKA"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED_Dual_AKA"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Dual LED, common cathode on pin 2"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode bicolor dual"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_Dual_AKA_0_1"
+				(polyline
+					(pts
+						(xy -4.572 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -2.54 0)
+					(radius 0.2794)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 -3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 4.572)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 3.81) (xy -1.27 2.54) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -3.81) (xy 1.27 -1.27) (xy -1.27 -2.54) (xy 1.27 -3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 5.08) (xy 3.556 6.604) (xy 2.794 6.604) (xy 3.556 6.604) (xy 3.556 5.842)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 2.54) (xy -2.54 2.54) (xy -2.54 -2.54) (xy 2.032 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.302 4.064) (xy 4.826 5.588) (xy 4.064 5.588) (xy 4.826 5.588) (xy 4.826 4.826)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 2.54) (xy 1.905 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 -2.54) (xy 1.905 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_Dual_AKA_1_1"
+				(pin input line
+					(at -7.62 0 0)
+					(length 3.048)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 7.62 2.54 180)
+					(length 3.81)
+					(name "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 7.62 -2.54 180)
+					(length 3.81)
+					(name "A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(junction
+		(at 227.33 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "00f2a582-d994-4338-91d8-fb1ad2c12642")
+	)
+	(junction
+		(at 166.37 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "02145ba1-0c36-431c-b8bb-109eec48db54")
+	)
+	(junction
+		(at 146.05 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0265540d-9f50-4ce7-8c90-01a6a0845cf8")
+	)
+	(junction
+		(at 166.37 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0566de7c-ac96-4315-a341-8a17cb0aa30f")
+	)
+	(junction
+		(at 146.05 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "062f1487-0d44-4a9f-999f-9ede51420cdd")
+	)
+	(junction
+		(at 125.73 151.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "06648d90-34f6-405e-ba65-f0cc9ac2a53f")
+	)
+	(junction
+		(at 186.69 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "07319633-213e-43c4-833a-2f34ece47fca")
+	)
+	(junction
+		(at 105.41 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "080788d0-3889-4afa-85d4-0c44dc134392")
+	)
+	(junction
+		(at 166.37 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0a72dcd8-2c76-4687-8168-075b03652b71")
+	)
+	(junction
+		(at 105.41 21.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0be2ee0c-9452-4c09-91fc-5f7625a8caca")
+	)
+	(junction
+		(at 110.49 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0c33292a-a18c-4ebe-af3e-3dadf9d9ec7c")
+	)
+	(junction
+		(at 227.33 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0dfb825d-00df-4dc5-99a7-3253b65c4a32")
+	)
+	(junction
+		(at 146.05 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "105bbf9f-737e-479f-bb80-6bf15a27f3d8")
+	)
+	(junction
+		(at 186.69 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "10e353e4-493b-4533-a988-880ce580667c")
+	)
+	(junction
+		(at 146.05 21.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "14e7070e-38f9-4de9-92a1-e56dd0c3cd5a")
+	)
+	(junction
+		(at 105.41 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "15a43ea5-50a8-4058-9cc7-dffe09c736c9")
+	)
+	(junction
+		(at 125.73 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "18c123e7-3e50-4d2d-ac9f-56ba8f42abcb")
+	)
+	(junction
+		(at 146.05 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1af3799e-636b-4273-92ce-49c8b3159cc1")
+	)
+	(junction
+		(at 125.73 21.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1bfaee4e-f9bd-4dcf-a880-e9aab696871c")
+	)
+	(junction
+		(at 130.81 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1c2397d6-ff92-4ec9-9429-5768fc151dc3")
+	)
+	(junction
+		(at 166.37 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1ee9bc4e-3c67-4946-8007-a48f7f82af21")
+	)
+	(junction
+		(at 69.85 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1fae72ab-c6f4-48d0-b672-c80a7a68cf11")
+	)
+	(junction
+		(at 69.85 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "21794e01-5896-4b43-926e-d742471a1f7a")
+	)
+	(junction
+		(at 186.69 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2371901a-bef4-4cae-8556-d4d5fb2fc5cc")
+	)
+	(junction
+		(at 105.41 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "24f94672-5043-4a6b-9dc9-21666e5befc9")
+	)
+	(junction
+		(at 151.13 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "25398a7c-8cab-4225-888d-13b2a195706e")
+	)
+	(junction
+		(at 166.37 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2806f874-06b2-4431-b6f6-83d0c57befaf")
+	)
+	(junction
+		(at 130.81 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "28c63269-a655-4d3b-8938-ea7d83184478")
+	)
+	(junction
+		(at 186.69 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "28f88f00-c299-4ff5-bf5f-26ccfc3e498b")
+	)
+	(junction
+		(at 151.13 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2a68b6d2-41e9-47af-8694-74d92ab2df62")
+	)
+	(junction
+		(at 125.73 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2a715bdc-a9e4-41e4-8e5d-2e810e1b7c43")
+	)
+	(junction
+		(at 110.49 128.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2a824295-13ee-4aa8-864b-966daadd1089")
+	)
+	(junction
+		(at 105.41 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2c06cbcb-0101-46c4-875f-faf53647ce2a")
+	)
+	(junction
+		(at 186.69 120.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2d427e26-92b2-4f23-81a8-3510337f1f20")
+	)
+	(junction
+		(at 186.69 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2e75c1f9-909b-47a7-b436-57e3194ed267")
+	)
+	(junction
+		(at 105.41 120.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3094c5d3-e79f-4ae5-9a83-6e6af9a88a45")
+	)
+	(junction
+		(at 105.41 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "30daa9d7-5e68-40a8-8d48-4b1a97927cb2")
+	)
+	(junction
+		(at 146.05 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3431d54b-9119-4910-95c9-0c1b8e76ea29")
+	)
+	(junction
+		(at 125.73 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "344ad9a1-4022-4097-9f05-f565fea60401")
+	)
+	(junction
+		(at 85.09 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "38a79611-97ae-4d5b-af83-830ada917aeb")
+	)
+	(junction
+		(at 146.05 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3a2adc62-efa1-486a-9d94-94f86d47a873")
+	)
+	(junction
+		(at 186.69 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3de93375-66e3-4c97-a90a-83d58ef9fbcd")
+	)
+	(junction
+		(at 125.73 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3e542f17-597d-4cfc-8e5a-f86f1b1117f7")
+	)
+	(junction
+		(at 90.17 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "40bf773c-e3df-41ec-a582-6fd0f5c262c0")
+	)
+	(junction
+		(at 130.81 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "41c32529-6047-491f-9561-dc20855db54c")
+	)
+	(junction
+		(at 171.45 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "41d9eae3-48fd-4578-bbce-92648dc2dc0f")
+	)
+	(junction
+		(at 212.09 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "41da80e0-1bfa-4357-995c-a0b3986e6cb4")
+	)
+	(junction
+		(at 207.01 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "43711fc9-0684-4119-af98-4f1cf9611671")
+	)
+	(junction
+		(at 191.77 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "43d129de-e09e-4684-8e02-e12d9ca621ef")
+	)
+	(junction
+		(at 186.69 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "457e51b7-3f62-4680-ba78-db5ffea4a7f4")
+	)
+	(junction
+		(at 207.01 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "49e9cbf7-5d1f-4575-9405-c31892edf165")
+	)
+	(junction
+		(at 85.09 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "49f9d7ba-8035-48a7-8101-2395b5a27a79")
+	)
+	(junction
+		(at 90.17 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4dcfae25-cc2e-4096-ae83-5551d27cd862")
+	)
+	(junction
+		(at 151.13 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "51ddcf44-58f8-4af2-bed0-478fc7926440")
+	)
+	(junction
+		(at 166.37 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5606ab01-9181-475b-b6f5-d06e7246e830")
+	)
+	(junction
+		(at 85.09 21.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "56908b7c-228c-4509-a406-141389166b9c")
+	)
+	(junction
+		(at 125.73 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "59dee9f4-c77c-4d55-a4bb-204b429aba72")
+	)
+	(junction
+		(at 146.05 120.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5ae8668d-36f1-4de1-ad4b-391cdb8f5a40")
+	)
+	(junction
+		(at 90.17 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5bf6ab59-72e3-4c91-a1c9-44eef3c541a1")
+	)
+	(junction
+		(at 105.41 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5c2023f5-7c07-4563-b789-e0f8792df309")
+	)
+	(junction
+		(at 85.09 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5cc154f8-639b-4a78-84f9-cbf6ba394899")
+	)
+	(junction
+		(at 90.17 128.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5d2124e1-e8e1-4a2a-800e-7e745bad4048")
+	)
+	(junction
+		(at 166.37 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5fd6237a-1546-4f5b-a26c-0ed6afbac139")
+	)
+	(junction
+		(at 207.01 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "60fa47fb-1c76-4640-a8bb-de6ac7a3ecf8")
+	)
+	(junction
+		(at 207.01 21.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6182b690-c337-421d-902f-0859ee36d005")
+	)
+	(junction
+		(at 171.45 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "623f41ee-e71b-44b2-8086-dd594a59690b")
+	)
+	(junction
+		(at 207.01 151.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "65375714-a14b-43c4-8f09-fbbffc6e6470")
+	)
+	(junction
+		(at 125.73 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6653a60c-cb54-45ce-a8c1-76f2f6462b09")
+	)
+	(junction
+		(at 166.37 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "66e5bd26-221b-4a21-98a0-f22bbedca7c6")
+	)
+	(junction
+		(at 105.41 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6938f81d-7761-45fd-a966-179fdac922f8")
+	)
+	(junction
+		(at 105.41 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6d27ba0d-c0a0-4de4-a201-4191f1b785bf")
+	)
+	(junction
+		(at 166.37 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6d3bf4d6-2283-477c-b125-2a9cef5ddf2f")
+	)
+	(junction
+		(at 90.17 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6e61f0bd-9bdc-4180-9432-b9ebcedbb60e")
+	)
+	(junction
+		(at 171.45 128.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6f7f7be9-02db-4afb-a308-a12fc42a8620")
+	)
+	(junction
+		(at 125.73 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "714a94bb-87d5-45a0-b7b5-d156380b6128")
+	)
+	(junction
+		(at 207.01 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7455113e-11e8-497d-b4bb-f57cc2d62e99")
+	)
+	(junction
+		(at 110.49 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7546f65f-9644-4cf4-bb9b-0c1e5b5ae5bd")
+	)
+	(junction
+		(at 212.09 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7605bd00-68a8-4a72-8991-121afb07f4fa")
+	)
+	(junction
+		(at 125.73 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7c279618-57c6-475f-b340-12f5de6474a4")
+	)
+	(junction
+		(at 85.09 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7f0db269-6e31-4458-aaf1-931dcbdd2c26")
+	)
+	(junction
+		(at 151.13 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "818fb65e-169b-45a9-a883-513812b71726")
+	)
+	(junction
+		(at 130.81 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "83840126-4cdf-43de-b824-1fa52a47fa95")
+	)
+	(junction
+		(at 105.41 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "84015d4e-dc8a-409e-be63-4cda8070e953")
+	)
+	(junction
+		(at 69.85 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8597ab98-a1e7-4c29-b89a-99c1c463b623")
+	)
+	(junction
+		(at 105.41 151.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "87774a5f-148e-47dd-bde6-446768d13b72")
+	)
+	(junction
+		(at 186.69 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8b46442c-a7be-47d7-92b7-9501774d7755")
+	)
+	(junction
+		(at 186.69 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "90ef006f-cbc9-4a87-a307-3e4cbc2dcbe4")
+	)
+	(junction
+		(at 207.01 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "92e39df8-9390-4f73-8877-256fc75123bb")
+	)
+	(junction
+		(at 146.05 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "93f4a92e-cc77-4307-a9bb-44a6f8cc7a30")
+	)
+	(junction
+		(at 69.85 128.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9525198e-e2d4-4d7e-a5d2-3d91db702d79")
+	)
+	(junction
+		(at 207.01 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "95916cd5-6375-4d1f-9cc2-f302ae76634b")
+	)
+	(junction
+		(at 125.73 120.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "962ad6a1-c409-4fb4-b94e-b9e6e2d0aa13")
+	)
+	(junction
+		(at 105.41 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "98838044-bd4e-4c79-bf2c-37c6c4479f1b")
+	)
+	(junction
+		(at 85.09 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9b1ec7db-03cc-4dd1-b1f6-6d81c96176f0")
+	)
+	(junction
+		(at 125.73 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a066d3c0-1294-402e-8dfc-8245dd8041c5")
+	)
+	(junction
+		(at 186.69 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a38c2307-d47d-435e-8b2f-4041baaac507")
+	)
+	(junction
+		(at 130.81 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a4aab6e7-c86d-481a-99d1-b976b6b7aebf")
+	)
+	(junction
+		(at 85.09 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a4b0740b-fcf6-404a-95be-0c8a47d56e8c")
+	)
+	(junction
+		(at 191.77 128.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a6207eca-3fba-4b40-b9ef-75b22e21dd5f")
+	)
+	(junction
+		(at 146.05 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a790b226-25bc-4b1c-be65-269a9077f5b9")
+	)
+	(junction
+		(at 186.69 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a8fd50a1-cf4b-49da-80cb-a7dcfab7cda7")
+	)
+	(junction
+		(at 227.33 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a97a066c-1555-4ec0-a4bb-951ee679f5f5")
+	)
+	(junction
+		(at 191.77 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ab8e177f-a605-4f9f-b05a-66b5c4ccf674")
+	)
+	(junction
+		(at 207.01 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ad52e87b-ab39-45ab-b541-04b7030f8e12")
+	)
+	(junction
+		(at 125.73 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ae9d7a35-44ec-4fbf-bda7-9458dfdc3851")
+	)
+	(junction
+		(at 130.81 128.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "afc3639c-51c2-4305-bf6f-950b4740f7be")
+	)
+	(junction
+		(at 166.37 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b1d9f132-caa4-4259-9cd3-b472bc5ead8a")
+	)
+	(junction
+		(at 125.73 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b1f054c3-ef05-4a78-b220-1a26b1513767")
+	)
+	(junction
+		(at 151.13 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b202f525-9ffd-4ee1-8b0a-7a986b4545b4")
+	)
+	(junction
+		(at 191.77 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b7a52b98-3e80-4250-a6ce-b264797bf696")
+	)
+	(junction
+		(at 166.37 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b88c2850-acf5-4392-a468-ab90baa7fd06")
+	)
+	(junction
+		(at 105.41 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b8904f67-1e46-4404-a408-62b2c2098f12")
+	)
+	(junction
+		(at 146.05 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b9706af1-81d2-42cc-9136-885cbbb80c1c")
+	)
+	(junction
+		(at 151.13 128.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b975f602-35b7-472e-94d9-ef8a45d3eabf")
+	)
+	(junction
+		(at 105.41 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bba0eaf0-018f-4f5e-b8be-954e368b4d84")
+	)
+	(junction
+		(at 227.33 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "be332b49-e383-4782-980e-07d139942028")
+	)
+	(junction
+		(at 125.73 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bee7873f-acf8-4a99-8e44-1647ea251449")
+	)
+	(junction
+		(at 110.49 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bf8a3a8b-8cf1-4b41-a5e5-ad469e47b637")
+	)
+	(junction
+		(at 186.69 151.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bfb58821-c0a0-41b8-906a-38f94429d004")
+	)
+	(junction
+		(at 146.05 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c001ef79-314a-4920-a873-c8940c410af8")
+	)
+	(junction
+		(at 69.85 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c0a79a64-f28d-425d-a5e3-acd96f86ddff")
+	)
+	(junction
+		(at 186.69 21.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c433c738-88e9-4d6f-b427-2422ac988f1f")
+	)
+	(junction
+		(at 130.81 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c45f935c-903c-4116-97c0-f03af09047de")
+	)
+	(junction
+		(at 186.69 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c5751512-9883-4f09-8c32-9e437cd1b36a")
+	)
+	(junction
+		(at 186.69 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c6fe4124-6f90-4fdc-bec3-830c664d7e65")
+	)
+	(junction
+		(at 69.85 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c7682ecf-607b-49d0-bb58-947d54f57bac")
+	)
+	(junction
+		(at 191.77 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c7c346c8-259b-43cd-ac7d-1ae6b7784542")
+	)
+	(junction
+		(at 207.01 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c8198823-ebfa-46da-8eae-e7402bbe1ff8")
+	)
+	(junction
+		(at 110.49 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c99488b0-2da6-4b5a-a293-9da3e86a459f")
+	)
+	(junction
+		(at 146.05 151.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cce45128-8208-4ca7-84e6-7a2f112bb73c")
+	)
+	(junction
+		(at 151.13 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cd579341-1b65-4ed2-91ea-7b708f4334b1")
+	)
+	(junction
+		(at 171.45 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cdd56b55-eab8-4c41-9d62-f8f75bb88308")
+	)
+	(junction
+		(at 207.01 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cf580d4f-79c9-47a5-afa8-489899a2c248")
+	)
+	(junction
+		(at 146.05 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d2390b70-956b-4d48-b802-9f2f3e4412da")
+	)
+	(junction
+		(at 166.37 120.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d3b66f42-545a-4563-b23f-6c5fd4654b3a")
+	)
+	(junction
+		(at 166.37 21.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d735595b-0fab-48f5-8542-e6cad6c68163")
+	)
+	(junction
+		(at 146.05 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d929e01a-984c-4980-9856-7570944a4b8d")
+	)
+	(junction
+		(at 207.01 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dce7c952-d2ca-409b-87dc-758866c877a2")
+	)
+	(junction
+		(at 110.49 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "df0be5cd-5329-436e-b68f-501b4b6b44cf")
+	)
+	(junction
+		(at 110.49 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e068ea3e-95fb-419d-973b-aa22cda3849a")
+	)
+	(junction
+		(at 212.09 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e0d4a0e3-fdfb-4357-aecc-31514e5b453b")
+	)
+	(junction
+		(at 191.77 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e224e4d3-2fde-48eb-9346-9585b9006661")
+	)
+	(junction
+		(at 125.73 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e4984cc4-e212-4f6b-905e-d6bc145416df")
+	)
+	(junction
+		(at 146.05 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e61e9377-bf1f-4561-b2a7-5e37b201447e")
+	)
+	(junction
+		(at 171.45 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e899c689-17aa-46af-9663-3f958b478746")
+	)
+	(junction
+		(at 171.45 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e8b3e890-87db-46d3-8d47-106ab282bced")
+	)
+	(junction
+		(at 85.09 120.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ee16b95a-2375-4bf1-9d72-f1a289072bb0")
+	)
+	(junction
+		(at 90.17 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ee1b5a38-efc8-457e-9f2c-2d388311b680")
+	)
+	(junction
+		(at 69.85 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f2c31f3d-ce6d-4c51-9f98-e042569bc223")
+	)
+	(junction
+		(at 191.77 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f593860e-3236-46c8-9768-548ff542135e")
+	)
+	(junction
+		(at 105.41 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f7606a32-3537-4a9f-a287-1a951b8aeaa6")
+	)
+	(junction
+		(at 171.45 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fb239290-b86b-40fd-9be3-d0e05c959e28")
+	)
+	(junction
+		(at 166.37 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fcf28c44-e59b-47f1-8e2e-805e0deb0f8d")
+	)
+	(junction
+		(at 90.17 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fd9b842f-d6b5-456f-b338-066a77ed0904")
+	)
+	(junction
+		(at 166.37 151.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fe64598e-2b9a-4ecb-bc46-0bcf82c50c80")
+	)
+	(junction
+		(at 166.37 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "feab6ea8-9cd2-49fa-912e-a27a3b9ee954")
+	)
+	(wire
+		(pts
+			(xy 125.73 52.07) (xy 125.73 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "010c8d34-5455-4faa-a3e7-c0b7e35d3e76")
+	)
+	(wire
+		(pts
+			(xy 233.68 52.07) (xy 227.33 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0117f5cc-4d09-47a8-92fe-5016950ad845")
+	)
+	(wire
+		(pts
+			(xy 125.73 54.61) (xy 146.05 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01cf38bf-c28e-44c7-8b5d-1174688d6f70")
+	)
+	(wire
+		(pts
+			(xy 69.85 62.23) (xy 69.85 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02b3de78-b875-4af8-ae3b-58b019903448")
+	)
+	(wire
+		(pts
+			(xy 207.01 54.61) (xy 207.01 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03baa1cf-6148-4340-bc02-8f3f8e7c6704")
+	)
+	(wire
+		(pts
+			(xy 105.41 85.09) (xy 105.41 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03cde4b0-9c41-4e65-9e69-fbd907d71fca")
+	)
+	(wire
+		(pts
+			(xy 85.09 64.77) (xy 85.09 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03fd03dc-5951-46b8-82c5-07d982a4270d")
+	)
+	(wire
+		(pts
+			(xy 64.77 137.16) (xy 85.09 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06bf04d7-ce61-426e-a923-9d6f3f9736cb")
+	)
+	(wire
+		(pts
+			(xy 207.01 85.09) (xy 207.01 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "077375e6-7925-4c55-8b95-90f7c7099f79")
+	)
+	(wire
+		(pts
+			(xy 125.73 68.58) (xy 146.05 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "087e4e02-a492-47c5-9bf4-9f7e6de36ed5")
+	)
+	(wire
+		(pts
+			(xy 105.41 71.12) (xy 125.73 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a5a42e9-971c-4e2a-87f5-b4f622eedfaf")
+	)
+	(wire
+		(pts
+			(xy 166.37 71.12) (xy 186.69 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b633122-b733-4890-8493-86543ba56dfe")
+	)
+	(wire
+		(pts
+			(xy 191.77 29.21) (xy 191.77 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0dba95ed-24cf-45a4-9ef7-443524a04c72")
+	)
+	(wire
+		(pts
+			(xy 105.41 35.56) (xy 125.73 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ead4772-1d55-4c98-af31-8487af041347")
+	)
+	(wire
+		(pts
+			(xy 85.09 46.99) (xy 85.09 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10ee23c9-0748-408d-839b-d4efb321af9f")
+	)
+	(wire
+		(pts
+			(xy 125.73 38.1) (xy 146.05 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12cded75-047c-4247-982b-4b55fc477879")
+	)
+	(wire
+		(pts
+			(xy 146.05 101.6) (xy 166.37 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1372ed7e-e9e4-46c6-8bbb-16dd5bbd257f")
+	)
+	(wire
+		(pts
+			(xy 110.49 62.23) (xy 110.49 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13e0fc33-13fe-44cc-bc1e-c837c72ccc96")
+	)
+	(wire
+		(pts
+			(xy 105.41 104.14) (xy 125.73 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "147f1255-2073-4609-bb18-9a4e66996a0e")
+	)
+	(wire
+		(pts
+			(xy 151.13 29.21) (xy 151.13 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "154ada5a-6971-4a83-9e6e-5d44eba0830a")
+	)
+	(wire
+		(pts
+			(xy 105.41 87.63) (xy 105.41 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15758208-416a-41cb-8c77-b5ea0b2f6fe8")
+	)
+	(wire
+		(pts
+			(xy 85.09 101.6) (xy 105.41 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1605f720-5a9e-4732-bf02-6d0ec26ad84f")
+	)
+	(wire
+		(pts
+			(xy 186.69 52.07) (xy 207.01 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17085894-669d-4ef0-aa57-979f6e449633")
+	)
+	(wire
+		(pts
+			(xy 69.85 29.21) (xy 69.85 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "176bbbeb-501c-4130-8ce2-3b2272df1f53")
+	)
+	(wire
+		(pts
+			(xy 105.41 21.59) (xy 105.41 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18796ce0-bdbe-4f2b-9c37-562c8fb6d925")
+	)
+	(wire
+		(pts
+			(xy 146.05 151.13) (xy 166.37 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "189a95b9-9feb-4e78-a1e0-52155c987ac0")
+	)
+	(wire
+		(pts
+			(xy 105.41 134.62) (xy 125.73 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18de155f-335a-4715-97a1-474575634c25")
+	)
+	(wire
+		(pts
+			(xy 130.81 111.76) (xy 130.81 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19833b48-ec97-4c39-8ccb-8ea4bf8850ee")
+	)
+	(wire
+		(pts
+			(xy 207.01 151.13) (xy 233.68 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19bcdc2f-e762-48c7-8889-0fcff3431f16")
+	)
+	(wire
+		(pts
+			(xy 227.33 68.58) (xy 227.33 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19d7eab5-b466-4b15-8710-28ecf6e9f21a")
+	)
+	(wire
+		(pts
+			(xy 186.69 118.11) (xy 186.69 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c2b938e-90a5-4167-a664-064a44f890c4")
+	)
+	(wire
+		(pts
+			(xy 171.45 156.21) (xy 171.45 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c9e320a-5bab-4506-8454-839f3d875256")
+	)
+	(wire
+		(pts
+			(xy 207.01 21.59) (xy 227.33 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cd26791-e8f2-46db-b691-f05aca1c54cd")
+	)
+	(wire
+		(pts
+			(xy 166.37 120.65) (xy 166.37 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cfa08c8-b2ff-4fae-b0bf-e1461f56f83e")
+	)
+	(wire
+		(pts
+			(xy 105.41 120.65) (xy 105.41 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d40199e-2de7-449c-942f-a81b6f27fea6")
+	)
+	(wire
+		(pts
+			(xy 125.73 52.07) (xy 146.05 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ee6fa6c-5ccf-46a3-9481-13b8905f1285")
+	)
+	(wire
+		(pts
+			(xy 69.85 77.47) (xy 69.85 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f0b3353-70dc-4b47-b6ab-ca631e436b82")
+	)
+	(wire
+		(pts
+			(xy 85.09 118.11) (xy 105.41 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f526274-f201-4c1f-b464-1851f495c0d3")
+	)
+	(wire
+		(pts
+			(xy 207.01 134.62) (xy 233.68 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20985021-6019-433c-a7d5-b9caf5c13359")
+	)
+	(wire
+		(pts
+			(xy 64.77 21.59) (xy 85.09 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21bc0750-a6b9-410a-8823-0d8eee53d103")
+	)
+	(wire
+		(pts
+			(xy 207.01 71.12) (xy 207.01 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2251e7b7-4f80-4144-8d00-7a43439201f5")
+	)
+	(wire
+		(pts
+			(xy 171.45 95.25) (xy 171.45 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22f657a2-56e3-417f-ac62-69ce5b824e55")
+	)
+	(wire
+		(pts
+			(xy 125.73 104.14) (xy 146.05 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24b271d1-aed1-4136-adc8-035684416ee6")
+	)
+	(wire
+		(pts
+			(xy 186.69 71.12) (xy 207.01 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "257b8482-a6ee-41ae-877d-d8e5539a6a00")
+	)
+	(wire
+		(pts
+			(xy 105.41 104.14) (xy 105.41 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "264782e3-bbf4-4ec0-ba06-b23bcb5aebd9")
+	)
+	(wire
+		(pts
+			(xy 125.73 101.6) (xy 146.05 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27d9e236-5ab7-4b82-ab62-8dac44fad70b")
+	)
+	(wire
+		(pts
+			(xy 166.37 38.1) (xy 166.37 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "282844ad-0fe9-47a9-9ac3-dbb697e97c7f")
+	)
+	(wire
+		(pts
+			(xy 125.73 35.56) (xy 146.05 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28c83555-80f7-484b-acd5-f3bf3f9a174d")
+	)
+	(wire
+		(pts
+			(xy 146.05 38.1) (xy 146.05 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "297f7744-70a2-4001-899c-98d8925cd01a")
+	)
+	(wire
+		(pts
+			(xy 207.01 118.11) (xy 233.68 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29f0470d-38c5-4eff-adfd-92b35991bc57")
+	)
+	(wire
+		(pts
+			(xy 166.37 101.6) (xy 186.69 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a2e86f1-1dc0-48aa-9ed1-31004720a3f3")
+	)
+	(wire
+		(pts
+			(xy 125.73 71.12) (xy 125.73 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2da76cda-8b7d-4198-ba2c-3a56efcd862b")
+	)
+	(wire
+		(pts
+			(xy 151.13 78.74) (xy 151.13 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2dd3558f-4fc9-48db-924c-59e0f625bb21")
+	)
+	(wire
+		(pts
+			(xy 146.05 52.07) (xy 166.37 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ea3a560-5296-4419-8326-c4fcd9d71674")
+	)
+	(wire
+		(pts
+			(xy 105.41 156.21) (xy 110.49 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f3999d1-e8ae-4819-919b-f1a74dbbd5cf")
+	)
+	(wire
+		(pts
+			(xy 171.45 62.23) (xy 171.45 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f691fef-6074-44ad-990b-d8867854c08f")
+	)
+	(wire
+		(pts
+			(xy 90.17 62.23) (xy 90.17 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2fae638e-d4fe-480e-87df-6ecc8b70f47f")
+	)
+	(wire
+		(pts
+			(xy 146.05 87.63) (xy 166.37 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30b5e4ff-7fcb-4f4d-94b2-849e0e8c89d6")
+	)
+	(wire
+		(pts
+			(xy 125.73 54.61) (xy 125.73 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "311aa00e-08a7-4e81-9862-167a3ac0ed2f")
+	)
+	(wire
+		(pts
+			(xy 85.09 26.67) (xy 85.09 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31aae491-3aef-4904-bfbd-d7d8b7031e46")
+	)
+	(wire
+		(pts
+			(xy 85.09 59.69) (xy 85.09 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31c9998c-ed19-4aa7-abf8-63433b8ff762")
+	)
+	(wire
+		(pts
+			(xy 105.41 151.13) (xy 125.73 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31ed72d5-20e4-46bf-8173-67e050c4cf20")
+	)
+	(wire
+		(pts
+			(xy 233.68 68.58) (xy 227.33 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3230c931-0617-4bd0-86d2-bbcdd41b7dc2")
+	)
+	(wire
+		(pts
+			(xy 186.69 68.58) (xy 186.69 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "326801b3-1fb9-428e-8dec-e1c366ed704d")
+	)
+	(wire
+		(pts
+			(xy 130.81 95.25) (xy 130.81 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33a81253-276e-4fb3-a3f9-3077ff8eb17b")
+	)
+	(wire
+		(pts
+			(xy 191.77 128.27) (xy 191.77 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33df9920-0ec9-4fa1-a5d4-f9aabdb7c760")
+	)
+	(wire
+		(pts
+			(xy 227.33 52.07) (xy 227.33 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34be8310-ff00-4c60-867f-ea126349f205")
+	)
+	(wire
+		(pts
+			(xy 125.73 118.11) (xy 125.73 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "360e3a87-bbd7-4599-bc8d-a51a9f2d75cc")
+	)
+	(wire
+		(pts
+			(xy 212.09 45.72) (xy 212.09 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3634243b-bb19-4fd6-8da2-7502bde1e6fc")
+	)
+	(wire
+		(pts
+			(xy 207.01 85.09) (xy 227.33 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3659e755-1a3e-4f75-a168-cf6654650561")
+	)
+	(wire
+		(pts
+			(xy 105.41 52.07) (xy 125.73 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3683aa52-d1a8-4ba2-bd69-3d0810eb2563")
+	)
+	(wire
+		(pts
+			(xy 146.05 120.65) (xy 166.37 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3732778a-c2cc-4647-83ab-e49fb5bad5a9")
+	)
+	(wire
+		(pts
+			(xy 105.41 85.09) (xy 125.73 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3790273c-2ea2-4f2f-a43a-ae1b94bd2727")
+	)
+	(wire
+		(pts
+			(xy 146.05 52.07) (xy 146.05 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a788484-2e3c-461f-8daf-d6fc55d084dc")
+	)
+	(wire
+		(pts
+			(xy 171.45 128.27) (xy 171.45 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ae484de-2a06-4211-a98f-2044ea35d8c5")
+	)
+	(wire
+		(pts
+			(xy 105.41 21.59) (xy 125.73 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b8d7bf8-1459-456d-9e48-4a606d7fbeea")
+	)
+	(wire
+		(pts
+			(xy 85.09 134.62) (xy 105.41 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3bfb34e2-29bc-4b9b-bbb3-75cf02f657df")
+	)
+	(wire
+		(pts
+			(xy 207.01 151.13) (xy 207.01 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3dc5fc16-b804-4056-973d-b1bd4850ce3b")
+	)
+	(wire
+		(pts
+			(xy 186.69 87.63) (xy 186.69 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e0eb363-9aae-4254-b9c7-32e6a4fac269")
+	)
+	(wire
+		(pts
+			(xy 151.13 128.27) (xy 151.13 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f2d48c7-dda5-47f8-b234-6fedd26df0f5")
+	)
+	(wire
+		(pts
+			(xy 186.69 120.65) (xy 186.69 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fb0ed33-ff95-415f-95c7-39af1cb1441c")
+	)
+	(wire
+		(pts
+			(xy 146.05 21.59) (xy 146.05 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fb3376a-c139-4576-9d09-88efa99e9212")
+	)
+	(wire
+		(pts
+			(xy 90.17 128.27) (xy 90.17 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ff2c542-44cf-4f89-af86-aebaec466aed")
+	)
+	(wire
+		(pts
+			(xy 90.17 95.25) (xy 90.17 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "405c0290-1b81-47e1-8344-8b9d4e300f2b")
+	)
+	(wire
+		(pts
+			(xy 166.37 118.11) (xy 166.37 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41053deb-1e0b-4456-b0c9-c1a39f5e634e")
+	)
+	(wire
+		(pts
+			(xy 151.13 95.25) (xy 151.13 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43e9356f-4a98-4274-aee4-1f1205567b2f")
+	)
+	(wire
+		(pts
+			(xy 191.77 156.21) (xy 191.77 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44065bb4-07d0-4fac-a9f6-e4b1baf1e3c5")
+	)
+	(wire
+		(pts
+			(xy 207.01 21.59) (xy 207.01 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45ab2a07-dd09-48ac-b802-b047ab9563cc")
+	)
+	(wire
+		(pts
+			(xy 166.37 87.63) (xy 186.69 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46a4960d-3aa7-4b29-9395-61a4a09c253e")
+	)
+	(wire
+		(pts
+			(xy 186.69 85.09) (xy 207.01 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46d36dd4-a446-48ab-b386-61c5143bd620")
+	)
+	(wire
+		(pts
+			(xy 105.41 35.56) (xy 105.41 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4751bf80-85c9-4db8-b43d-75adcf8f13dd")
+	)
+	(wire
+		(pts
+			(xy 105.41 68.58) (xy 125.73 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "486d8357-f6c8-4e56-bc40-08617279ca13")
+	)
+	(wire
+		(pts
+			(xy 186.69 134.62) (xy 207.01 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49e54268-a85d-4c71-9c7a-1b012d70e961")
+	)
+	(wire
+		(pts
+			(xy 85.09 151.13) (xy 105.41 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49f555da-eab4-4579-89bf-48025b2ddea3")
+	)
+	(wire
+		(pts
+			(xy 186.69 137.16) (xy 186.69 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f89ac76-dfc3-45d9-8710-ed1a7777badc")
+	)
+	(wire
+		(pts
+			(xy 85.09 35.56) (xy 105.41 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "507287c7-e20d-4b01-84e7-0489d7f79a31")
+	)
+	(wire
+		(pts
+			(xy 186.69 137.16) (xy 207.01 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50856559-3273-4dbc-b69c-a2507b22b4a1")
+	)
+	(wire
+		(pts
+			(xy 110.49 128.27) (xy 110.49 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50c64065-05be-45ad-ab99-4cff5036d393")
+	)
+	(wire
+		(pts
+			(xy 105.41 68.58) (xy 105.41 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51f89fc5-9ca7-4abb-b712-cec53916d385")
+	)
+	(wire
+		(pts
+			(xy 186.69 85.09) (xy 186.69 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53010137-f06c-43dc-ad76-d4f11d9321db")
+	)
+	(wire
+		(pts
+			(xy 186.69 71.12) (xy 186.69 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "539204b9-d0f9-4ca5-a623-b82cd4ea8fb9")
+	)
+	(wire
+		(pts
+			(xy 207.01 134.62) (xy 207.01 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "544f0191-2f1a-42e8-85c1-36e741f0e157")
+	)
+	(wire
+		(pts
+			(xy 166.37 38.1) (xy 186.69 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5483fa8c-f601-4d10-92d1-c292a27ca531")
+	)
+	(wire
+		(pts
+			(xy 125.73 104.14) (xy 125.73 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54af9b0c-88a4-408e-b47a-029708e59be3")
+	)
+	(wire
+		(pts
+			(xy 125.73 118.11) (xy 146.05 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "550595ee-4d5a-4020-81bd-2148d9c65ad6")
+	)
+	(wire
+		(pts
+			(xy 166.37 85.09) (xy 186.69 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "552f23a0-5acc-4c47-beaf-4e2634826037")
+	)
+	(wire
+		(pts
+			(xy 125.73 85.09) (xy 146.05 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56b2c228-842a-4408-9ccf-646f7683f70a")
+	)
+	(wire
+		(pts
+			(xy 105.41 118.11) (xy 125.73 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58785552-b997-4200-86e3-4174432ca537")
+	)
+	(wire
+		(pts
+			(xy 146.05 21.59) (xy 166.37 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58daa8a9-e3d2-4658-bdba-37fe023eec20")
+	)
+	(wire
+		(pts
+			(xy 146.05 101.6) (xy 146.05 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58efb2a5-765d-49eb-b829-45123a804501")
+	)
+	(wire
+		(pts
+			(xy 207.01 101.6) (xy 207.01 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59071c2e-df73-4cd6-a3bf-330b25f2f259")
+	)
+	(wire
+		(pts
+			(xy 186.69 87.63) (xy 207.01 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5917bfe9-d2ed-4aba-9140-e5921382b537")
+	)
+	(wire
+		(pts
+			(xy 207.01 118.11) (xy 207.01 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a648fe7-84e1-41f3-9c82-683f0cfab016")
+	)
+	(wire
+		(pts
+			(xy 166.37 87.63) (xy 166.37 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ca90e2f-7909-4a54-b39b-bcf2ba2438ab")
+	)
+	(wire
+		(pts
+			(xy 125.73 120.65) (xy 146.05 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d3bdaeb-d593-4cf4-9f98-7f18950abe4a")
+	)
+	(wire
+		(pts
+			(xy 186.69 35.56) (xy 186.69 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d913061-9c63-4c92-9565-9f7eaa43f16d")
+	)
+	(wire
+		(pts
+			(xy 207.01 87.63) (xy 207.01 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f14eb8a-0083-4882-a0dc-ca9c3ba79abc")
+	)
+	(wire
+		(pts
+			(xy 146.05 71.12) (xy 146.05 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f24fa13-3f70-423b-b005-ff0035327825")
+	)
+	(wire
+		(pts
+			(xy 207.01 38.1) (xy 227.33 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fa6301c-3b61-4233-beb3-892d1f7aae22")
+	)
+	(wire
+		(pts
+			(xy 146.05 68.58) (xy 166.37 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "604be804-7154-4849-b109-f047fe0941f4")
+	)
+	(wire
+		(pts
+			(xy 64.77 120.65) (xy 85.09 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60b6e0eb-24b1-4344-95fb-7b32945eee49")
+	)
+	(wire
+		(pts
+			(xy 105.41 38.1) (xy 125.73 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60f391f3-72ce-4954-a866-92581e1a74f7")
+	)
+	(wire
+		(pts
+			(xy 90.17 78.74) (xy 90.17 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6235245d-6fa2-467e-b423-d2cc48fbb152")
+	)
+	(wire
+		(pts
+			(xy 130.81 62.23) (xy 130.81 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "625f2a6f-5bff-492f-b4fe-b8c4868d1815")
+	)
+	(wire
+		(pts
+			(xy 233.68 85.09) (xy 227.33 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "633416e4-5b23-4a57-89df-fe845ccbc0c7")
+	)
+	(wire
+		(pts
+			(xy 64.77 87.63) (xy 85.09 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "634d297d-d288-464f-9f06-560481f8e68a")
+	)
+	(wire
+		(pts
+			(xy 125.73 151.13) (xy 125.73 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64dd86ec-8d0e-4ad7-b635-203a2b68841e")
+	)
+	(wire
+		(pts
+			(xy 105.41 52.07) (xy 105.41 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64e28232-b7fa-41bb-8c53-03de650993b9")
+	)
+	(wire
+		(pts
+			(xy 130.81 156.21) (xy 130.81 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67b422ae-f954-4347-932c-3ab901ddb60b")
+	)
+	(wire
+		(pts
+			(xy 125.73 137.16) (xy 146.05 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a056395-db25-47a6-b579-bf4eea227696")
+	)
+	(wire
+		(pts
+			(xy 85.09 97.79) (xy 85.09 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a45dac7-6624-487b-ba27-1d3268a2d94f")
+	)
+	(wire
+		(pts
+			(xy 166.37 104.14) (xy 186.69 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b27603e-2d36-460e-8dc3-597a6ecf3f22")
+	)
+	(wire
+		(pts
+			(xy 64.77 156.21) (xy 69.85 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c125580-615f-4c67-9cfb-f82ca2b5af3f")
+	)
+	(wire
+		(pts
+			(xy 85.09 41.91) (xy 85.09 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c78e150-31f3-433a-a4da-85d93cb413c9")
+	)
+	(wire
+		(pts
+			(xy 166.37 35.56) (xy 186.69 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d268cea-47ba-4eb2-9630-295d6b9c60b5")
+	)
+	(wire
+		(pts
+			(xy 212.09 78.74) (xy 212.09 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d68a392-fde4-4b18-b4ff-80ffbbf6ac9e")
+	)
+	(wire
+		(pts
+			(xy 166.37 156.21) (xy 171.45 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6df0869a-8f5a-4ff8-b322-4e2262d96f90")
+	)
+	(wire
+		(pts
+			(xy 186.69 156.21) (xy 191.77 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e050501-5eca-47ad-be79-d65c1bdc67f4")
+	)
+	(wire
+		(pts
+			(xy 105.41 151.13) (xy 105.41 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e9962ec-520e-4f3a-98ab-fa118dd7a8d3")
+	)
+	(wire
+		(pts
+			(xy 233.68 35.56) (xy 227.33 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ec08a2c-f526-4bdc-910b-2098bace8bd1")
+	)
+	(wire
+		(pts
+			(xy 166.37 21.59) (xy 186.69 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ef6269e-f91f-443d-88e2-f94b6592cdc1")
+	)
+	(wire
+		(pts
+			(xy 146.05 134.62) (xy 146.05 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f7b16c1-7d1e-44b6-8f54-95489a19a4c1")
+	)
+	(wire
+		(pts
+			(xy 125.73 137.16) (xy 125.73 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f91ab39-d68f-4b7c-aaa1-0aac15866c8c")
+	)
+	(wire
+		(pts
+			(xy 166.37 35.56) (xy 166.37 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "710d6da8-4cf1-4b81-bf60-89516321819a")
+	)
+	(wire
+		(pts
+			(xy 207.01 68.58) (xy 227.33 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72e73e42-2a0c-4942-9787-627ba4fe7406")
+	)
+	(wire
+		(pts
+			(xy 207.01 101.6) (xy 233.68 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7544468e-57a7-423f-983b-b67741631f93")
+	)
+	(wire
+		(pts
+			(xy 146.05 156.21) (xy 151.13 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7652def2-13a1-47f7-86b9-9743803c54c2")
+	)
+	(wire
+		(pts
+			(xy 191.77 95.25) (xy 191.77 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76625d23-e96e-4dbd-b5a3-4491917d15d3")
+	)
+	(wire
+		(pts
+			(xy 125.73 156.21) (xy 130.81 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76a46731-70e8-4908-82e3-32060dbdad28")
+	)
+	(wire
+		(pts
+			(xy 166.37 137.16) (xy 186.69 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "783bc65b-2ef4-4458-9a2a-0db3c383ad6d")
+	)
+	(wire
+		(pts
+			(xy 85.09 74.93) (xy 85.09 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "791ec999-f508-46f2-9b0c-57fcbdfef548")
+	)
+	(wire
+		(pts
+			(xy 146.05 85.09) (xy 146.05 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79489cd0-0294-48c2-b4e6-948726a617f8")
+	)
+	(wire
+		(pts
+			(xy 166.37 134.62) (xy 166.37 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79c20cb1-4335-4c48-974e-769481bd1694")
+	)
+	(wire
+		(pts
+			(xy 125.73 85.09) (xy 125.73 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ae62cdc-7452-4e2c-8158-61e39f36cc37")
+	)
+	(wire
+		(pts
+			(xy 212.09 29.21) (xy 212.09 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b4e103f-dd85-4e03-b4d3-2b3614ae2072")
+	)
+	(wire
+		(pts
+			(xy 146.05 104.14) (xy 146.05 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7bb798ad-52e2-4dc1-be05-f649bf5f0f0e")
+	)
+	(wire
+		(pts
+			(xy 69.85 156.21) (xy 69.85 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d03a3a0-6a29-47f9-9af8-d8e6384fd0f3")
+	)
+	(wire
+		(pts
+			(xy 105.41 87.63) (xy 125.73 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7dbf14b9-5149-4c8b-8aa8-038e0781e29e")
+	)
+	(wire
+		(pts
+			(xy 105.41 120.65) (xy 125.73 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e2fdd06-b54f-4e46-b3c1-c808f6ef9e10")
+	)
+	(wire
+		(pts
+			(xy 166.37 104.14) (xy 166.37 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ee26dfc-2417-45a4-92a1-4f173acb04d2")
+	)
+	(wire
+		(pts
+			(xy 85.09 85.09) (xy 105.41 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ee5bf07-7f7c-46e3-a2de-114332a67586")
+	)
+	(wire
+		(pts
+			(xy 166.37 71.12) (xy 166.37 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "802cefc9-6d6b-40b9-8d72-5e317d048b88")
+	)
+	(wire
+		(pts
+			(xy 105.41 71.12) (xy 105.41 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8194164e-8d83-4849-9da7-96e3dc86182e")
+	)
+	(wire
+		(pts
+			(xy 227.33 71.12) (xy 227.33 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8208c6dc-d85d-45af-b987-7ff62117edb0")
+	)
+	(wire
+		(pts
+			(xy 146.05 120.65) (xy 146.05 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83c5ec3c-8bac-40bb-82b5-9d3ddf07483c")
+	)
+	(wire
+		(pts
+			(xy 207.01 35.56) (xy 227.33 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85fd7fe8-11e1-4d43-9890-d900caeb5b46")
+	)
+	(wire
+		(pts
+			(xy 105.41 101.6) (xy 105.41 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8704a045-bf0b-4db0-b266-6f9e803916e4")
+	)
+	(wire
+		(pts
+			(xy 227.33 85.09) (xy 227.33 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8714c469-e8b4-4fcd-93ed-316f8dde9f66")
+	)
+	(wire
+		(pts
+			(xy 166.37 54.61) (xy 186.69 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88e8a115-60c7-4fbb-9eb4-f1f1a849a7fa")
+	)
+	(wire
+		(pts
+			(xy 85.09 137.16) (xy 105.41 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "895614ad-3025-4cce-93f5-9f8ec3245075")
+	)
+	(wire
+		(pts
+			(xy 130.81 128.27) (xy 130.81 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a23ab1f-f50a-4ec4-bb9a-d8d5cd1b3703")
+	)
+	(wire
+		(pts
+			(xy 186.69 134.62) (xy 186.69 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8aabe66a-6a81-49e1-a6f4-8578a0778d2e")
+	)
+	(wire
+		(pts
+			(xy 130.81 29.21) (xy 130.81 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ac4638b-fa24-4072-9289-91c00d5cf2aa")
+	)
+	(wire
+		(pts
+			(xy 146.05 68.58) (xy 146.05 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8adcd76a-ea3f-4e42-a120-460515932228")
+	)
+	(wire
+		(pts
+			(xy 227.33 38.1) (xy 227.33 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8aef78da-8530-4802-92db-2cec1721ee08")
+	)
+	(wire
+		(pts
+			(xy 186.69 120.65) (xy 207.01 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c583d3b-1dfb-4631-aa7c-36dc58051ac1")
+	)
+	(wire
+		(pts
+			(xy 85.09 87.63) (xy 105.41 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d0ed94c-95c2-4560-90f9-fa23e4add608")
+	)
+	(wire
+		(pts
+			(xy 85.09 120.65) (xy 105.41 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d879943-c39f-41c5-8a24-3a013a5ef36d")
+	)
+	(wire
+		(pts
+			(xy 186.69 104.14) (xy 207.01 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8daca754-823b-4276-91b4-0a56f1afbad0")
+	)
+	(wire
+		(pts
+			(xy 186.69 151.13) (xy 207.01 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "904f812d-672e-4cf5-ac72-1aae4386d55e")
+	)
+	(wire
+		(pts
+			(xy 186.69 21.59) (xy 186.69 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "907667c7-b79d-4f09-aa95-8cc95d14baae")
+	)
+	(wire
+		(pts
+			(xy 207.01 71.12) (xy 227.33 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9085ea5a-731a-4978-8a68-a5a0fdbaf954")
+	)
+	(wire
+		(pts
+			(xy 227.33 21.59) (xy 227.33 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90b49c8b-8714-4b4b-b497-dfe3ba579a43")
+	)
+	(wire
+		(pts
+			(xy 125.73 68.58) (xy 125.73 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9172e6cc-da57-4d48-991f-9350b4374dc5")
+	)
+	(wire
+		(pts
+			(xy 146.05 151.13) (xy 146.05 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "929582a9-5dbe-40cf-b6bd-d8bc0836bfc9")
+	)
+	(wire
+		(pts
+			(xy 207.01 68.58) (xy 207.01 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "936fa202-91f8-4e5f-8742-b856af84b3ec")
+	)
+	(wire
+		(pts
+			(xy 207.01 52.07) (xy 227.33 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9466e29c-2747-4b46-8892-ac9a18ded2c0")
+	)
+	(wire
+		(pts
+			(xy 125.73 21.59) (xy 125.73 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96cf1e5d-9358-484b-acf2-4942cc6c8a5c")
+	)
+	(wire
+		(pts
+			(xy 105.41 134.62) (xy 105.41 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9815826e-1ab4-4cd2-91ef-5424f40aae0d")
+	)
+	(wire
+		(pts
+			(xy 186.69 68.58) (xy 207.01 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a3d42f4-3737-4a5a-8b9f-853ac8537af7")
+	)
+	(wire
+		(pts
+			(xy 146.05 137.16) (xy 166.37 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c7b180c-f74f-4781-8581-ff3a71c3a175")
+	)
+	(wire
+		(pts
+			(xy 69.85 128.27) (xy 69.85 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d602fbf-6428-4dfb-ba4c-afa6cd1f739a")
+	)
+	(wire
+		(pts
+			(xy 85.09 125.73) (xy 85.09 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9da7c2c9-8c01-40a6-a811-123243462f9c")
+	)
+	(wire
+		(pts
+			(xy 85.09 71.12) (xy 105.41 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9dc91d92-d030-42a8-8ea7-4bc467ecc7e4")
+	)
+	(wire
+		(pts
+			(xy 90.17 29.21) (xy 90.17 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9de67455-30f8-43af-8b43-c62bf8715d3e")
+	)
+	(wire
+		(pts
+			(xy 186.69 151.13) (xy 186.69 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e297123-065d-4ab9-b18c-c2c4d9add3ef")
+	)
+	(wire
+		(pts
+			(xy 166.37 68.58) (xy 186.69 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ef00371-c5c2-4245-a9c1-b80a70d7eba0")
+	)
+	(wire
+		(pts
+			(xy 186.69 38.1) (xy 186.69 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2f3ee36-ab8a-4cf2-90a6-c6849792b3b2")
+	)
+	(wire
+		(pts
+			(xy 125.73 134.62) (xy 125.73 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2fb4a36-afde-4efb-9328-ecac4c62ac87")
+	)
+	(wire
+		(pts
+			(xy 69.85 95.25) (xy 69.85 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4114bcd-b590-4111-9540-59b15bd27e96")
+	)
+	(wire
+		(pts
+			(xy 85.09 104.14) (xy 105.41 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4de91f8-4a66-4dfc-bd33-909447cb50c4")
+	)
+	(wire
+		(pts
+			(xy 146.05 35.56) (xy 166.37 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a88f80f1-66b5-42f7-b438-ea4846d0ed29")
+	)
+	(wire
+		(pts
+			(xy 186.69 54.61) (xy 186.69 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a89b71aa-0e85-4ccc-933a-73e3549aedf4")
+	)
+	(wire
+		(pts
+			(xy 151.13 156.21) (xy 151.13 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8a93398-d786-4bc8-8cac-376eaecff868")
+	)
+	(wire
+		(pts
+			(xy 125.73 38.1) (xy 125.73 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8f1c0f0-8621-4447-acf2-413b03962374")
+	)
+	(wire
+		(pts
+			(xy 186.69 101.6) (xy 207.01 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9b17014-2566-407e-9ec0-5bf5477c1138")
+	)
+	(wire
+		(pts
+			(xy 207.01 52.07) (xy 207.01 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9c8f4d7-29ab-4de2-80cb-7f2ad8890c6c")
+	)
+	(wire
+		(pts
+			(xy 125.73 35.56) (xy 125.73 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa34d47a-865c-4ff7-9945-d2ae86f0f008")
+	)
+	(wire
+		(pts
+			(xy 110.49 78.74) (xy 110.49 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aaab481f-4c03-42e7-a00d-5a57d6341f14")
+	)
+	(wire
+		(pts
+			(xy 207.01 120.65) (xy 207.01 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac81f304-8253-4d33-ab9a-35305f8bd06a")
+	)
+	(wire
+		(pts
+			(xy 166.37 52.07) (xy 166.37 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae839643-3926-48d3-9669-e524c36ca12a")
+	)
+	(wire
+		(pts
+			(xy 105.41 118.11) (xy 105.41 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af3a57a5-eb14-475a-8e29-27e6f46ff786")
+	)
+	(wire
+		(pts
+			(xy 191.77 78.74) (xy 191.77 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af513046-ccf6-429d-b902-89c043ba683e")
+	)
+	(wire
+		(pts
+			(xy 146.05 134.62) (xy 166.37 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af60957c-63b1-49c7-a040-50cea0f13c05")
+	)
+	(wire
+		(pts
+			(xy 110.49 29.21) (xy 110.49 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2d98bca-7820-482e-b990-9f483658ab65")
+	)
+	(wire
+		(pts
+			(xy 90.17 156.21) (xy 90.17 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b33d7a74-ff14-4fd0-a590-1396acb9b17f")
+	)
+	(wire
+		(pts
+			(xy 85.09 52.07) (xy 105.41 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b438d769-acc6-4d73-bf61-8e8838141b12")
+	)
+	(wire
+		(pts
+			(xy 85.09 68.58) (xy 105.41 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4432107-9e73-4022-a697-e7f653d8479f")
+	)
+	(wire
+		(pts
+			(xy 186.69 35.56) (xy 207.01 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4e906b9-e87f-4f0d-aab3-99771a510816")
+	)
+	(wire
+		(pts
+			(xy 125.73 101.6) (xy 125.73 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5816049-1996-4fd9-b199-a75aaadd799a")
+	)
+	(wire
+		(pts
+			(xy 85.09 130.81) (xy 85.09 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b676ba40-8568-42c1-a2f3-17b92dfdfb3a")
+	)
+	(wire
+		(pts
+			(xy 166.37 101.6) (xy 166.37 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6a67a59-6817-47af-81d8-239294095df2")
+	)
+	(wire
+		(pts
+			(xy 146.05 38.1) (xy 166.37 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6befabc-8d18-4178-a5da-742d2d528a57")
+	)
+	(wire
+		(pts
+			(xy 85.09 92.71) (xy 85.09 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6c64f41-fdd4-4e4c-805b-706aff2370e0")
+	)
+	(wire
+		(pts
+			(xy 69.85 110.49) (xy 69.85 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b711e951-ed63-4a81-baf8-27be97e5ee27")
+	)
+	(wire
+		(pts
+			(xy 166.37 120.65) (xy 186.69 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8f780db-8c53-41df-92d1-9460603a5289")
+	)
+	(wire
+		(pts
+			(xy 110.49 111.76) (xy 110.49 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9c3009d-bb02-41c2-b72f-f1e1111a649d")
+	)
+	(wire
+		(pts
+			(xy 90.17 111.76) (xy 90.17 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba58800a-c5eb-4409-bbb0-223c9843cc66")
+	)
+	(wire
+		(pts
+			(xy 90.17 45.72) (xy 90.17 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb09e587-c145-49c0-a831-a600783d69b5")
+	)
+	(wire
+		(pts
+			(xy 125.73 120.65) (xy 125.73 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb47c369-9e0f-4133-b2e9-8f65aa6eaee4")
+	)
+	(wire
+		(pts
+			(xy 110.49 95.25) (xy 110.49 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd1a618f-b60f-4d1a-9746-3b3f03bb0dff")
+	)
+	(wire
+		(pts
+			(xy 171.45 45.72) (xy 171.45 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be8a9d49-4ff6-4497-aa20-c0ae9e82cd0b")
+	)
+	(wire
+		(pts
+			(xy 85.09 21.59) (xy 105.41 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0685f7a-03c1-4094-b5ec-c1a21adc1710")
+	)
+	(wire
+		(pts
+			(xy 146.05 118.11) (xy 166.37 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0f970bc-4e41-4207-a8ea-038f3c55180e")
+	)
+	(wire
+		(pts
+			(xy 130.81 78.74) (xy 130.81 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2127ace-570b-4df8-80d8-93024616dc84")
+	)
+	(wire
+		(pts
+			(xy 130.81 45.72) (xy 130.81 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2718f34-64a1-4714-980c-76e41c94888d")
+	)
+	(wire
+		(pts
+			(xy 105.41 54.61) (xy 125.73 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c289cf17-2aa3-4789-a555-0c78414acad1")
+	)
+	(wire
+		(pts
+			(xy 186.69 104.14) (xy 186.69 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2c9039c-65bf-4bd8-bcf9-4faaf0addcde")
+	)
+	(wire
+		(pts
+			(xy 186.69 118.11) (xy 207.01 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c34db743-d80d-462a-bcdd-4c85bd42bc65")
+	)
+	(wire
+		(pts
+			(xy 166.37 85.09) (xy 166.37 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6212e55-a171-4f51-bd48-fd649fc4abec")
+	)
+	(wire
+		(pts
+			(xy 207.01 54.61) (xy 227.33 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c635dac2-0460-4f6e-95f1-0448b2a79f9c")
+	)
+	(wire
+		(pts
+			(xy 64.77 38.1) (xy 85.09 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c676da0e-740c-46a9-a683-b616c0661cb3")
+	)
+	(wire
+		(pts
+			(xy 207.01 38.1) (xy 207.01 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6c620a1-da69-4b83-931d-ab50ebf334ae")
+	)
+	(wire
+		(pts
+			(xy 105.41 54.61) (xy 105.41 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6eb2f88-741f-4030-ade5-c4f7328ab151")
+	)
+	(wire
+		(pts
+			(xy 212.09 62.23) (xy 212.09 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c702faee-9f60-42d0-841f-7f05727656ca")
+	)
+	(wire
+		(pts
+			(xy 146.05 87.63) (xy 146.05 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7a01474-9bee-4679-b787-b0c87692b64e")
+	)
+	(wire
+		(pts
+			(xy 207.01 156.21) (xy 212.09 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c97a7e40-fbbd-4ede-8b6a-549b84ac9009")
+	)
+	(wire
+		(pts
+			(xy 85.09 147.32) (xy 85.09 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc0b9557-0677-4524-ba6d-77153b5b0437")
+	)
+	(wire
+		(pts
+			(xy 105.41 137.16) (xy 125.73 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc46ade6-1318-4022-9ca8-5c540824c777")
+	)
+	(wire
+		(pts
+			(xy 166.37 151.13) (xy 186.69 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ccd1c6ed-0e95-4f75-ab01-1400643d0cb8")
+	)
+	(wire
+		(pts
+			(xy 146.05 137.16) (xy 146.05 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ceecfc5d-677d-4ab0-8949-5224123692bb")
+	)
+	(wire
+		(pts
+			(xy 186.69 54.61) (xy 207.01 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf77edcf-72fd-4abf-bb4e-9bb7fc9a08ac")
+	)
+	(wire
+		(pts
+			(xy 151.13 111.76) (xy 151.13 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cfc07b5e-303d-4f7d-8324-6781eed3a1a4")
+	)
+	(wire
+		(pts
+			(xy 171.45 111.76) (xy 171.45 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d009ed92-78a4-4509-8c9a-fc511c9e181d")
+	)
+	(wire
+		(pts
+			(xy 191.77 62.23) (xy 191.77 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0d48b1f-8e5c-43ee-87f2-a813cea02edb")
+	)
+	(wire
+		(pts
+			(xy 85.09 156.21) (xy 90.17 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d251b85c-5af8-4967-b2f5-75fff5ad4b09")
+	)
+	(wire
+		(pts
+			(xy 207.01 137.16) (xy 207.01 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d27cafa4-7356-451f-90fa-e480d00dc27a")
+	)
+	(wire
+		(pts
+			(xy 125.73 87.63) (xy 125.73 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7422277-3634-4f70-814d-a13479703ad6")
+	)
+	(wire
+		(pts
+			(xy 85.09 113.03) (xy 85.09 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7646227-ff6b-474e-89f0-0d109113905e")
+	)
+	(wire
+		(pts
+			(xy 85.09 54.61) (xy 105.41 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d938279a-354a-424a-8d38-a2d572574714")
+	)
+	(wire
+		(pts
+			(xy 146.05 104.14) (xy 166.37 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9cc66d9-3fda-4c7c-92bf-00863ec24962")
+	)
+	(wire
+		(pts
+			(xy 191.77 111.76) (xy 191.77 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc51f295-faa3-4f8b-b645-a7a45fc02024")
+	)
+	(wire
+		(pts
+			(xy 166.37 52.07) (xy 186.69 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dccad020-c27f-49ff-98bb-1795d7b7d5e6")
+	)
+	(wire
+		(pts
+			(xy 146.05 85.09) (xy 166.37 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ddca753f-830d-4732-add9-86d61c273c4b")
+	)
+	(wire
+		(pts
+			(xy 227.33 35.56) (xy 227.33 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de23adf2-4499-4cf7-b714-820bb4046026")
+	)
+	(wire
+		(pts
+			(xy 69.85 44.45) (xy 69.85 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df71cd8f-6cc8-44f1-a153-ac16e7dd7d63")
+	)
+	(wire
+		(pts
+			(xy 64.77 54.61) (xy 85.09 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfd6b63f-73dc-4b66-9098-213c9368c0a7")
+	)
+	(wire
+		(pts
+			(xy 64.77 71.12) (xy 85.09 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0ad65be-5eb6-472e-bcd1-1dfb3ea64452")
+	)
+	(wire
+		(pts
+			(xy 85.09 80.01) (xy 85.09 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1048b59-3ff8-4d9c-8ead-b462b7f0a2d2")
+	)
+	(wire
+		(pts
+			(xy 125.73 134.62) (xy 146.05 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e15471f7-7495-4a57-9bd8-297d686c6658")
+	)
+	(wire
+		(pts
+			(xy 191.77 45.72) (xy 191.77 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e15c98f4-9255-45b5-a135-cce6150c130b")
+	)
+	(wire
+		(pts
+			(xy 125.73 71.12) (xy 146.05 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2e246a8-e7ff-4c5a-a122-09a3cf3a671c")
+	)
+	(wire
+		(pts
+			(xy 166.37 68.58) (xy 166.37 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5bc584a-d0b0-497c-ac38-a500f8bc43fb")
+	)
+	(wire
+		(pts
+			(xy 166.37 54.61) (xy 166.37 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e62e487e-0600-485d-a918-fb727fcb34cd")
+	)
+	(wire
+		(pts
+			(xy 85.09 38.1) (xy 105.41 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e708b907-df85-4b63-8cfc-5e5ebdcf0279")
+	)
+	(wire
+		(pts
+			(xy 151.13 62.23) (xy 151.13 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8d63a12-2077-48cd-8388-d3965ebb9e73")
+	)
+	(wire
+		(pts
+			(xy 85.09 31.75) (xy 85.09 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8fd4b94-4a13-4d6d-adaf-d18e94a0f7c4")
+	)
+	(wire
+		(pts
+			(xy 186.69 21.59) (xy 207.01 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9ef5d03-620f-4e7b-962a-fd0f109c8301")
+	)
+	(wire
+		(pts
+			(xy 105.41 38.1) (xy 105.41 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea673ba4-38dc-409b-b321-a4679e8d73f8")
+	)
+	(wire
+		(pts
+			(xy 110.49 45.72) (xy 110.49 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb274881-6031-4ddb-9e95-15a3cb5700a7")
+	)
+	(wire
+		(pts
+			(xy 171.45 78.74) (xy 171.45 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb9544ed-9fc9-4904-a5b5-c88ba8fdb036")
+	)
+	(wire
+		(pts
+			(xy 166.37 134.62) (xy 186.69 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec1a684a-af6f-45a7-bfee-be9ccde14714")
+	)
+	(wire
+		(pts
+			(xy 110.49 156.21) (xy 110.49 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ecdae82b-1ca7-4510-a9e9-907eedce10bc")
+	)
+	(wire
+		(pts
+			(xy 207.01 104.14) (xy 207.01 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed359948-eb51-4e30-b29c-2b3fa2510604")
+	)
+	(wire
+		(pts
+			(xy 166.37 21.59) (xy 166.37 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee2d8537-3b2c-4408-a61e-b379440faf45")
+	)
+	(wire
+		(pts
+			(xy 85.09 107.95) (xy 85.09 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee4f36e2-5a3d-4cc9-89e8-9d5c00c7fdff")
+	)
+	(wire
+		(pts
+			(xy 85.09 142.24) (xy 85.09 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f02f8e2e-8cf0-4a09-ba3d-1446dcbcb257")
+	)
+	(wire
+		(pts
+			(xy 125.73 87.63) (xy 146.05 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f03003a1-d3e8-48fb-8c73-432c62caa8e5")
+	)
+	(wire
+		(pts
+			(xy 125.73 151.13) (xy 146.05 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f084b028-b2c9-46e3-b561-30e6a77aff88")
+	)
+	(wire
+		(pts
+			(xy 105.41 101.6) (xy 125.73 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f23fca37-9f82-48e6-888b-9c095f4b22fd")
+	)
+	(wire
+		(pts
+			(xy 151.13 45.72) (xy 151.13 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3999804-c6d1-4ce0-a780-74e7b60d7568")
+	)
+	(wire
+		(pts
+			(xy 171.45 29.21) (xy 171.45 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f42c4fe0-dc9f-42de-9ac9-545f0c858fbc")
+	)
+	(wire
+		(pts
+			(xy 186.69 52.07) (xy 186.69 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6297449-dd56-4de2-b837-f0b988ee0e8b")
+	)
+	(wire
+		(pts
+			(xy 166.37 137.16) (xy 166.37 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f64d7cae-cf48-4536-b4e4-f2d3f2d615bc")
+	)
+	(wire
+		(pts
+			(xy 146.05 71.12) (xy 166.37 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f68d4237-0560-42ed-86bc-e0a7f6905b09")
+	)
+	(wire
+		(pts
+			(xy 227.33 54.61) (xy 227.33 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f745504f-eced-432b-9eb8-7467004d805b")
+	)
+	(wire
+		(pts
+			(xy 166.37 151.13) (xy 166.37 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7e63c4f-4c33-4244-b411-e9c08d51e028")
+	)
+	(wire
+		(pts
+			(xy 146.05 54.61) (xy 146.05 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8fd367f-512d-4481-a784-deee3888c166")
+	)
+	(wire
+		(pts
+			(xy 146.05 118.11) (xy 146.05 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9d014ae-923c-4ecc-868e-6f9a00cb7987")
+	)
+	(wire
+		(pts
+			(xy 105.41 137.16) (xy 105.41 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa4e32ee-33d2-47b5-bee2-8f0778585576")
+	)
+	(wire
+		(pts
+			(xy 166.37 118.11) (xy 186.69 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fadc80bd-33e3-4f42-9963-8b56e21fe344")
+	)
+	(wire
+		(pts
+			(xy 207.01 35.56) (xy 207.01 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb42efdf-0385-4f5a-baf9-6dfc18d0f884")
+	)
+	(wire
+		(pts
+			(xy 146.05 54.61) (xy 166.37 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb68d2ee-cdcd-4646-9b37-74d78b27e3ea")
+	)
+	(wire
+		(pts
+			(xy 186.69 38.1) (xy 207.01 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbf9ab57-2877-4e9c-967c-3ff611bc7d60")
+	)
+	(wire
+		(pts
+			(xy 125.73 21.59) (xy 146.05 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc7be379-f0fa-41f6-8430-34bd963cae14")
+	)
+	(wire
+		(pts
+			(xy 64.77 104.14) (xy 85.09 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe88b888-f5b0-4203-a829-391c9eb64a20")
+	)
+	(wire
+		(pts
+			(xy 186.69 101.6) (xy 186.69 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "feb17be8-0fdf-423d-b87f-6de0bd37a8ae")
+	)
+	(wire
+		(pts
+			(xy 146.05 35.56) (xy 146.05 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fee79434-9637-4b5f-9e2d-3f5f30758217")
+	)
+	(hierarchical_label "SCANR5"
+		(shape input)
+		(at 64.77 104.14 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "02f796d2-c93e-430d-afd2-b5a6ead75c73")
+	)
+	(hierarchical_label "SCANR3"
+		(shape input)
+		(at 64.77 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1563cc6c-c7dc-4876-9f04-10549d3c0ef7")
+	)
+	(hierarchical_label "RETURN2"
+		(shape output)
+		(at 105.41 156.21 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1dec07b2-9dfb-4435-8bff-8c7003290d3b")
+	)
+	(hierarchical_label "SCANR7"
+		(shape input)
+		(at 64.77 137.16 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "202da7b0-e8c0-47ae-bc81-0902f214f972")
+	)
+	(hierarchical_label "SCANR1"
+		(shape input)
+		(at 64.77 38.1 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2cf59138-7068-43c8-9dc9-3c3c29d1b067")
+	)
+	(hierarchical_label "SCANR0"
+		(shape input)
+		(at 64.77 21.59 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "467663e1-95ce-469c-acaf-4dca0063de6a")
+	)
+	(hierarchical_label "SCANG3"
+		(shape input)
+		(at 233.68 85.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7050c4c1-f899-4335-9f0d-d3e4a9742548")
+	)
+	(hierarchical_label "SCANR4"
+		(shape input)
+		(at 64.77 87.63 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7364baab-684f-4274-b926-4f31e290792e")
+	)
+	(hierarchical_label "SCANG6"
+		(shape input)
+		(at 233.68 134.62 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "801ade2c-e4b4-4642-9072-0f2ec6e59586")
+	)
+	(hierarchical_label "RETURN1"
+		(shape output)
+		(at 85.09 156.21 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9266908a-1ca4-4a7f-8cb1-50f9bf1c79a9")
+	)
+	(hierarchical_label "SCANG5"
+		(shape input)
+		(at 233.68 118.11 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9db928d5-58a2-4382-8c4a-6f1005d06c23")
+	)
+	(hierarchical_label "RETURN0"
+		(shape output)
+		(at 64.77 156.21 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a1b2bc8a-b07b-4faf-a490-0f74154099aa")
+	)
+	(hierarchical_label "RETURN4"
+		(shape output)
+		(at 146.05 156.21 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b4476387-049b-43ff-98dc-41d6cec2fb6d")
+	)
+	(hierarchical_label "SCANG7"
+		(shape input)
+		(at 233.68 151.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b6a2cc0f-fe30-4902-b4f2-acb840dea664")
+	)
+	(hierarchical_label "SCANR6"
+		(shape input)
+		(at 64.77 120.65 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b79be190-481e-4c82-bf35-7c0adc77c889")
+	)
+	(hierarchical_label "SCANG0"
+		(shape input)
+		(at 233.68 35.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bb51e783-7c31-442e-99ce-d5aee6f83e54")
+	)
+	(hierarchical_label "RETURN5"
+		(shape output)
+		(at 166.37 156.21 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c0d7fc0d-e277-4106-bf20-6def9d4c7ad9")
+	)
+	(hierarchical_label "SCANG4"
+		(shape input)
+		(at 233.68 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cae127a3-2122-406e-91d9-bca4643d7787")
+	)
+	(hierarchical_label "RETURN3"
+		(shape output)
+		(at 125.73 156.21 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d56861d2-f878-4dcd-b1c9-167f3ea94919")
+	)
+	(hierarchical_label "SCANG2"
+		(shape input)
+		(at 233.68 68.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "dcc4ae3a-30cc-4600-8362-d6962b2981a1")
+	)
+	(hierarchical_label "SCANG1"
+		(shape input)
+		(at 233.68 52.07 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e0c7b93d-3366-41bb-8e38-8e893580c0c7")
+	)
+	(hierarchical_label "RETURN6"
+		(shape output)
+		(at 186.69 156.21 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e59fdbbf-404b-4ac5-8e85-2735c3428a7f")
+	)
+	(hierarchical_label "RETURN7"
+		(shape output)
+		(at 207.01 156.21 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e606f360-09cc-49ca-906e-b88216ebfa61")
+	)
+	(hierarchical_label "SCANR2"
+		(shape input)
+		(at 64.77 54.61 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e9f06a87-39bd-49de-84f5-5edf986bb570")
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 138.43 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "05cfcdc1-9b9f-466c-9ad3-969a5e61d3aa")
+		(property "Reference" "D32"
+			(at 146.558 128.016 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 141.478 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 138.43 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6ed8493a-8422-4422-be44-afd484cdedd8")
+		)
+		(pin "2"
+			(uuid "73b1e796-97e1-4053-8fa8-efd4f615292f")
+		)
+		(pin "3"
+			(uuid "423f34a9-bee9-46c2-8739-7463444a2436")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 179.07 45.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "09a70e1e-89ea-4d73-84f5-baef6e65a01d")
+		(property "Reference" "D43"
+			(at 187.198 45.466 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 182.118 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 179.07 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 179.07 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 179.07 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "17f1ccfa-aa45-4846-9817-e2e365e61cfd")
+		)
+		(pin "2"
+			(uuid "6b4e5b04-2bd8-4f96-8c60-a7c454ee7f7e")
+		)
+		(pin "3"
+			(uuid "af2b2b1c-df39-4530-9882-627ff435fc5c")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 118.11 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0a0b3c49-c451-448a-949d-06aa1d393580")
+		(property "Reference" "D21"
+			(at 126.238 78.486 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 121.158 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 118.11 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 118.11 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 118.11 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a556e955-fb7b-4080-82e0-09f28c9aa580")
+		)
+		(pin "2"
+			(uuid "4e59ae98-7e6a-4023-8bac-d662ff15e33f")
+		)
+		(pin "3"
+			(uuid "f7a11550-243b-4215-9436-f10708e80f86")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 118.11 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "11bc3101-b968-4c9a-8dd8-d2b3129ff3c7")
+		(property "Reference" "D25"
+			(at 126.238 144.526 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 121.158 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 118.11 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 118.11 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 118.11 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3dcea901-82f7-4bda-afa5-260af7913c3d")
+		)
+		(pin "2"
+			(uuid "74ef8ba1-4715-4d55-86df-c217b7366bc6")
+		)
+		(pin "3"
+			(uuid "db41455d-75a7-4bac-b8d1-521339594117")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 118.11 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "182130cb-e043-470c-8b06-9623e08a6981")
+		(property "Reference" "D22"
+			(at 126.238 94.996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 121.158 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 118.11 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 118.11 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 118.11 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7d27e295-2f33-4d84-8595-e3f11aa4de71")
+		)
+		(pin "2"
+			(uuid "07b39d8c-6b63-48de-8322-9432381f82f7")
+		)
+		(pin "3"
+			(uuid "ec1e45ce-5c1a-4787-8124-0d480a14d4c8")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 179.07 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2098aa0f-edd5-494f-8445-a68e37b0cd3e")
+		(property "Reference" "D48"
+			(at 187.198 128.016 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 182.118 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 179.07 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 179.07 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 179.07 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f32b1450-32c5-4bb6-9447-48079a34d56e")
+		)
+		(pin "2"
+			(uuid "b94fccad-2d7b-48e9-a0db-64291a8369d5")
+		)
+		(pin "3"
+			(uuid "5ef4c5f0-db13-4f92-aef9-55e8918e3abc")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D48")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 77.47 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "21d5ece9-0a1c-4357-89f7-75eb66500633")
+		(property "Reference" "D5"
+			(at 85.598 77.216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 80.518 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 77.47 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 77.47 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 77.47 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e0e21f34-d8dc-4647-b5e4-79d47213e221")
+		)
+		(pin "2"
+			(uuid "982eb64d-a161-40a8-886a-055b4ffb061f")
+		)
+		(pin "3"
+			(uuid "feb61ad8-4adb-48cb-b230-de05d68f8b68")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 179.07 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "22e5d0e9-ded1-4ede-aa0f-6df4ac956f46")
+		(property "Reference" "D46"
+			(at 187.198 94.996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 182.118 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 179.07 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 179.07 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 179.07 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "82cdb5c0-7ba5-409c-b492-dbd085cc5c98")
+		)
+		(pin "2"
+			(uuid "d9523e6e-15f7-4e6e-801e-a9bfc6958bc2")
+		)
+		(pin "3"
+			(uuid "accf769c-f5df-4fd2-a0a7-368c317cedf8")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D46")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 219.71 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2f3c7fe3-d4a2-4dad-ac7a-a48205260cce")
+		(property "Reference" "D61"
+			(at 227.838 78.486 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 222.758 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 219.71 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 219.71 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 219.71 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5488e81a-7d16-4b2a-9fbc-c45e4d9b1c1f")
+		)
+		(pin "2"
+			(uuid "b70b145d-6103-4cd5-8d79-e0ba4b55e589")
+		)
+		(pin "3"
+			(uuid "8a2f0c2a-a376-4ea3-ba31-7a79f1e24b54")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D61")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 138.43 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2f675a45-e16b-4805-82d8-ffeef60e3137")
+		(property "Reference" "D33"
+			(at 146.558 144.526 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 141.478 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 138.43 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2b0f6954-9f0a-4daf-a661-2308cf3f6595")
+		)
+		(pin "2"
+			(uuid "14d18fd0-986c-4f66-aa75-fecd6d39c281")
+		)
+		(pin "3"
+			(uuid "942e8ccd-a3cc-4e4c-8fdf-e404d10c7bcb")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 138.43 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "31982b47-7619-4585-82ce-7a4d878f28da")
+		(property "Reference" "D31"
+			(at 146.558 111.506 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 141.478 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 138.43 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "00ee3ee4-f895-48ef-863d-154b502fb46d")
+		)
+		(pin "2"
+			(uuid "9dc00495-2dd7-4d54-87df-0e915155ccc3")
+		)
+		(pin "3"
+			(uuid "9bb19f87-4f29-49b1-b7f5-4a6a169e2724")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 179.07 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "32e3949a-f5fb-4096-8511-d38c9eb320c4")
+		(property "Reference" "D45"
+			(at 187.198 78.486 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 182.118 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 179.07 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 179.07 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 179.07 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8d0b5ffd-28cb-424d-8336-6a5f748c00ad")
+		)
+		(pin "2"
+			(uuid "4478469b-a1dd-4d80-947c-1ead770ea88a")
+		)
+		(pin "3"
+			(uuid "7085f2b9-d733-463a-984f-328f74a01868")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D45")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 199.39 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3c4d698f-a001-417c-946b-7f4cdd0bc22e")
+		(property "Reference" "D57"
+			(at 207.518 144.526 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 202.438 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 199.39 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 199.39 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 199.39 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1c4eea64-204a-4c26-a879-020b169a541c")
+		)
+		(pin "2"
+			(uuid "c9ca0097-88e5-4cd3-b0b3-7c3e3404d9f8")
+		)
+		(pin "3"
+			(uuid "79be7743-849b-4b72-81f9-281ef2c09ae1")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D57")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 219.71 29.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3c8f9c25-7703-449b-baff-921f9f8492ef")
+		(property "Reference" "D58"
+			(at 227.838 28.956 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 222.758 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 219.71 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 219.71 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 219.71 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5d1cf2ed-58cb-42e9-bd82-c1714edd7267")
+		)
+		(pin "2"
+			(uuid "1e6f515c-364c-44e7-9267-f7c8a541efcc")
+		)
+		(pin "3"
+			(uuid "838e3c03-f8c0-4bd3-a6db-34e439e1c743")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D58")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 199.39 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "46e66074-226f-4abc-8916-b01863147fab")
+		(property "Reference" "D52"
+			(at 207.518 61.976 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 202.438 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 199.39 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 199.39 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 199.39 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9f2682a9-7327-4571-9cfe-21923ba2eb4b")
+		)
+		(pin "2"
+			(uuid "02431d53-ee72-4634-bb73-00effebc1f80")
+		)
+		(pin "3"
+			(uuid "13e5a5bb-258f-4799-974a-cc76b88adff4")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D52")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 138.43 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4bb4470d-be50-46b9-b653-cc039b881fde")
+		(property "Reference" "D30"
+			(at 146.558 94.996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 141.478 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 138.43 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f98bf45b-4884-4a2e-820c-7209623ef6e0")
+		)
+		(pin "2"
+			(uuid "00fa91db-8182-4e26-bce9-76bdbe591afd")
+		)
+		(pin "3"
+			(uuid "47c0920c-b1d0-4a21-b89c-d93976a21d4c")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 138.43 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4e7bd1c7-bdc6-4a75-ae7c-4577a191afea")
+		(property "Reference" "D29"
+			(at 146.558 78.486 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 141.478 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 138.43 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0c4a4dc8-a059-43c1-902c-ab5ed22df861")
+		)
+		(pin "2"
+			(uuid "c8ace94b-d9ce-406b-9826-c9ee516d020e")
+		)
+		(pin "3"
+			(uuid "c3d42239-8d52-4c32-8491-87751af03edc")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 158.75 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "50525fc8-cf56-4945-a9a5-61b46178a054")
+		(property "Reference" "D38"
+			(at 166.878 94.996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 161.798 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 158.75 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 158.75 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 158.75 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6da0fecc-f108-46cb-bdae-c943a08d8c24")
+		)
+		(pin "2"
+			(uuid "c7445bd5-40a4-4a15-aaae-4e1dcfee14aa")
+		)
+		(pin "3"
+			(uuid "ec9e11bf-445e-47a4-a705-6bc145cc400a")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 138.43 29.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "57496c0f-4b36-40c9-8571-29be716aba31")
+		(property "Reference" "D26"
+			(at 146.558 28.956 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 141.478 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 138.43 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f63f98e2-b13c-4c5e-a6cf-c30849ff2c31")
+		)
+		(pin "2"
+			(uuid "85741f49-418e-4c38-b88f-e9ccb81bda08")
+		)
+		(pin "3"
+			(uuid "51d8dfd3-9393-4e4f-a338-8d87b6e8afdd")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 199.39 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5a9aa54b-6e1f-4713-8c33-647a29cd6ae1")
+		(property "Reference" "D53"
+			(at 207.518 78.486 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 202.438 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 199.39 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 199.39 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 199.39 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dece5a79-d5ad-48c3-8e1c-c71d5fcb14fe")
+		)
+		(pin "2"
+			(uuid "f2703eca-6b4f-445e-b331-5fd6cded7748")
+		)
+		(pin "3"
+			(uuid "fefd76f3-d796-47f1-8780-24dea5e74a43")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D53")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 97.79 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5d1c1579-69a5-47cd-a95f-7acf73539452")
+		(property "Reference" "D15"
+			(at 105.918 111.506 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 100.838 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 97.79 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 97.79 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 97.79 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "13d9196a-24b1-4c05-951b-f939bd1a3eed")
+		)
+		(pin "2"
+			(uuid "43c7a8cb-421f-41d1-958f-a227a55f5c3a")
+		)
+		(pin "3"
+			(uuid "bc61d9fe-5c54-45fc-8cfd-8cae14565785")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 158.75 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5d54cf0c-3a1b-4e60-8a92-ccab3836a3b1")
+		(property "Reference" "D36"
+			(at 166.878 61.976 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 161.798 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 158.75 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 158.75 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 158.75 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e14a53d6-fb17-46ba-8f92-59ef8e02158d")
+		)
+		(pin "2"
+			(uuid "0f4c794a-e3e7-4cda-ac8c-3fc9d31f3caa")
+		)
+		(pin "3"
+			(uuid "6674e321-682c-4c20-bdde-bb7ab56648ab")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 199.39 45.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5da34d61-a472-4199-8dc6-4ef786836114")
+		(property "Reference" "D51"
+			(at 207.518 45.466 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 202.438 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 199.39 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 199.39 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 199.39 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b7e80969-c142-48ac-b408-fd905c65cde6")
+		)
+		(pin "2"
+			(uuid "95503557-5250-4b69-a5db-d42bee9f3499")
+		)
+		(pin "3"
+			(uuid "9d1b0917-256a-41fb-84ec-d2b323d6d77b")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D51")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 77.47 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "66c46a71-ef20-4954-9a30-1d4d00ff75da")
+		(property "Reference" "D9"
+			(at 85.598 144.526 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 80.518 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 77.47 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 77.47 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 77.47 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "23746e76-2173-4467-80b1-6475976daa04")
+		)
+		(pin "2"
+			(uuid "f983f52b-4cad-4945-88ab-eb6f4481cc5d")
+		)
+		(pin "3"
+			(uuid "27506a36-a1ff-47c5-89cf-3f2f80c333ca")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 77.47 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "685faf80-27c3-4bb5-863a-79ef021257d1")
+		(property "Reference" "D3"
+			(at 85.598 44.196 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 80.518 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 77.47 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 77.47 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 77.47 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "783c14d1-ab80-450f-b4d8-07f1f6b6b281")
+		)
+		(pin "2"
+			(uuid "d0c1f39f-2638-4df6-b804-2c67c0b7ca4d")
+		)
+		(pin "3"
+			(uuid "376fde85-cc89-4d6a-a8db-fe20cde753d1")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 77.47 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6b1f7dbe-d55f-4c9c-b4ca-17f962ba18a0")
+		(property "Reference" "D7"
+			(at 85.598 110.236 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 80.518 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 77.47 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 77.47 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 77.47 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a5a9329d-6376-4e1c-8b23-23fcea7010ae")
+		)
+		(pin "2"
+			(uuid "32c18dc4-1b75-4375-b999-660cc9a17bb9")
+		)
+		(pin "3"
+			(uuid "30c3fe99-aa0d-4abe-bcc2-a95dce633081")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 138.43 45.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "70f0c5a3-3739-48ab-b987-6a57b0c9f5ed")
+		(property "Reference" "D27"
+			(at 146.558 45.466 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 141.478 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 138.43 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2d5d3cdd-f607-4bf0-ae3c-681f5e31af18")
+		)
+		(pin "2"
+			(uuid "7a6ea87f-efe5-48d4-8fec-5b1ad3d18453")
+		)
+		(pin "3"
+			(uuid "98a562d2-161f-4b08-8639-543dd18a4176")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 158.75 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "73252d99-0121-4435-9b24-88593428de6d")
+		(property "Reference" "D39"
+			(at 166.878 111.506 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 161.798 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 158.75 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 158.75 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 158.75 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "52d0dee9-fa6c-43a0-9c6f-8569ca58ba7b")
+		)
+		(pin "2"
+			(uuid "1fd3e05b-1a22-4e7b-aa46-b3815d45bea9")
+		)
+		(pin "3"
+			(uuid "843a7bee-af4a-4b0e-9373-026363cc7f5f")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D39")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 158.75 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7f8efa86-0efa-4bd5-b23b-7e7d1520d9dd")
+		(property "Reference" "D40"
+			(at 166.878 128.016 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 161.798 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 158.75 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 158.75 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 158.75 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a674de20-f711-494c-be22-b8bb2c7fda79")
+		)
+		(pin "2"
+			(uuid "5e88b4e4-d48c-4ea5-b268-7fc8b85305d7")
+		)
+		(pin "3"
+			(uuid "bbe7ba30-b7de-4ca8-b045-d3a721b6413d")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 97.79 29.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "80a37e55-18b7-481a-91e2-73b2990212a9")
+		(property "Reference" "D10"
+			(at 105.918 28.956 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 100.838 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 97.79 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 97.79 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 97.79 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1350ce7c-2ecb-4637-8c27-ffd62b425559")
+		)
+		(pin "2"
+			(uuid "771e08f4-1eae-4174-95fd-8e2ae2379b8b")
+		)
+		(pin "3"
+			(uuid "7b1df6df-3e0a-472b-8297-931b3255a871")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 199.39 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8655de87-f888-4617-8389-4d15e205e56a")
+		(property "Reference" "D56"
+			(at 207.518 128.016 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 202.438 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 199.39 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 199.39 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 199.39 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "79988f32-228f-41a5-aca7-0da7786712d5")
+		)
+		(pin "2"
+			(uuid "8b699a02-76fa-498d-85bd-ec1164462ba2")
+		)
+		(pin "3"
+			(uuid "241ace48-b4b0-4447-913a-b1a3832228be")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D56")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 77.47 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "87aad618-8aa5-422a-82c0-123590e09fbd")
+		(property "Reference" "D8"
+			(at 85.598 128.016 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 80.518 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 77.47 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 77.47 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 77.47 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d8ef84bc-19d6-4e12-88f7-417d30f70674")
+		)
+		(pin "2"
+			(uuid "5a04cb98-dbf2-4937-b773-5ef269d91fee")
+		)
+		(pin "3"
+			(uuid "26afda09-aa8c-4554-b814-54f3f0432adc")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 77.47 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8ff5460b-ffad-4046-a813-0267637091d5")
+		(property "Reference" "D4"
+			(at 85.598 61.976 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 80.518 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 77.47 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 77.47 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 77.47 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4ba28ef1-e268-4fcc-945d-fa16e1bd95ef")
+		)
+		(pin "2"
+			(uuid "18eeecc0-2f9e-463c-87b6-e9532463ace0")
+		)
+		(pin "3"
+			(uuid "013d3566-a3da-45ff-a620-b88e4bc03b4c")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 77.47 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "93e05ab5-fa38-41d7-9f45-8d74707f06df")
+		(property "Reference" "D6"
+			(at 85.598 94.996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 80.518 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 77.47 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 77.47 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 77.47 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f115dfda-168b-46f7-92d7-ae3e256a28ff")
+		)
+		(pin "2"
+			(uuid "44e1e4b3-bfa8-4963-b2c2-deb207fd2e91")
+		)
+		(pin "3"
+			(uuid "cf6f6121-ac3e-4683-b4df-a5d9e9c98226")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 97.79 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9406daaf-4ac6-4ca5-9973-3d969d83e5be")
+		(property "Reference" "D17"
+			(at 105.918 144.526 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 100.838 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 97.79 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 97.79 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 97.79 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "78c2b18b-2c7a-4773-a86f-36348e452091")
+		)
+		(pin "2"
+			(uuid "e0a3d784-e59e-461a-bd76-194f281b6b2b")
+		)
+		(pin "3"
+			(uuid "cb9ee266-087d-4f22-85bc-7c533dac828e")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 118.11 45.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9817553a-49af-420c-bb0c-da9bf9a4aafe")
+		(property "Reference" "D19"
+			(at 126.238 45.466 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 121.158 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 118.11 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 118.11 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 118.11 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a7b9d14b-4d33-481c-a366-be7eb95bfd86")
+		)
+		(pin "2"
+			(uuid "c67ee39f-3413-49cc-9b2a-dd4cba019362")
+		)
+		(pin "3"
+			(uuid "f204b302-5efc-443b-ac98-169bd5c30da6")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 179.07 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "996ab7ce-fd40-415c-88bd-f0c416edf05b")
+		(property "Reference" "D49"
+			(at 187.198 144.526 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 182.118 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 179.07 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 179.07 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 179.07 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "73ef369b-a1fc-4337-a7e3-42b968a4ce35")
+		)
+		(pin "2"
+			(uuid "20baddda-bd69-48dc-9e91-3161fdee5957")
+		)
+		(pin "3"
+			(uuid "02f0683a-7cf0-4fab-aa2f-f818bb3c8283")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D49")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 97.79 45.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9d0121ab-bd30-4c59-b189-4791f28ff73c")
+		(property "Reference" "D11"
+			(at 105.918 45.466 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 100.838 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 97.79 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 97.79 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 97.79 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "29a7d778-f032-4ad7-ae9b-8d92752263eb")
+		)
+		(pin "2"
+			(uuid "634a2131-69ac-4367-a857-a3b96a0f8ff0")
+		)
+		(pin "3"
+			(uuid "d038d148-6436-42f9-bd40-d46cdf676a19")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 118.11 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a49736fb-f11a-43d8-b0b9-2f7b7df20528")
+		(property "Reference" "D20"
+			(at 126.238 61.976 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 121.158 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 118.11 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 118.11 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 118.11 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fc0e851e-ca3e-4cb0-840c-66b0b11242ea")
+		)
+		(pin "2"
+			(uuid "28a6be80-e93e-4a7e-99c6-f4c84784526e")
+		)
+		(pin "3"
+			(uuid "ffe46491-3479-4eb2-b9bc-8ccdc79d834a")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 118.11 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ab0b0866-874a-46fa-b11a-1d50ddf31067")
+		(property "Reference" "D23"
+			(at 126.238 111.506 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 121.158 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 118.11 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 118.11 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 118.11 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "25c357f7-bf15-4b22-970e-c5cd68df8b9f")
+		)
+		(pin "2"
+			(uuid "3053fa38-4afa-454c-9d7b-d701d1c3d83b")
+		)
+		(pin "3"
+			(uuid "30b2a58a-3bd9-48d0-932f-5365c063324a")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 118.11 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ab9d6509-a640-4ed8-bcc9-0b843e2f10e3")
+		(property "Reference" "D24"
+			(at 126.238 128.016 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 121.158 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 118.11 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 118.11 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 118.11 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0737f7ff-5e3d-4d47-9be1-94c76611ee48")
+		)
+		(pin "2"
+			(uuid "a364b7e7-797f-4484-ad64-6450dec54de8")
+		)
+		(pin "3"
+			(uuid "7b4e8f43-72f5-4b09-a36a-d29c04c6d02c")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 199.39 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "abb34ecc-20cd-4313-845d-201822ea7261")
+		(property "Reference" "D55"
+			(at 207.518 111.506 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 202.438 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 199.39 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 199.39 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 199.39 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "44ecba27-0324-4b49-82b6-48652b8e1bf5")
+		)
+		(pin "2"
+			(uuid "df752bf1-0f45-446a-825b-921a75dfaa90")
+		)
+		(pin "3"
+			(uuid "7a2c97c6-f8e4-40ed-9cb3-eaa56cbe5f2a")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D55")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 97.79 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ae51f97f-abe2-4e36-9a77-1448532fe6fa")
+		(property "Reference" "D13"
+			(at 105.918 78.486 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 100.838 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 97.79 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 97.79 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 97.79 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5e1908bd-d608-4936-8d3d-525e26c93cf7")
+		)
+		(pin "2"
+			(uuid "d0cf4976-deff-46f4-9993-fcea07c81068")
+		)
+		(pin "3"
+			(uuid "aa7c6aaf-ebcb-42a7-94fc-c866db48ea3a")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 158.75 45.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b6855daf-4258-4149-ae64-591f0d867412")
+		(property "Reference" "D35"
+			(at 166.878 45.466 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 161.798 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 158.75 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 158.75 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 158.75 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "35507100-8988-4444-b74e-5c7170a9f2e6")
+		)
+		(pin "2"
+			(uuid "5aacb9c7-b8c7-49b1-876e-0b2e5a872c34")
+		)
+		(pin "3"
+			(uuid "c0fd71e4-047a-4eaf-816e-4ca7dd7b85d0")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 179.07 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bca099f9-9bdd-4055-8f7a-b1d4da468a17")
+		(property "Reference" "D44"
+			(at 187.198 61.976 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 182.118 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 179.07 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 179.07 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 179.07 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "999a274b-7f46-4c30-8547-c9123f2be9e0")
+		)
+		(pin "2"
+			(uuid "14908ae4-ef1c-47bd-ae8d-7652a137b525")
+		)
+		(pin "3"
+			(uuid "929a727f-37d5-4a26-ad55-d4af52a3544d")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D44")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 118.11 29.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bf5fd018-a9e2-42c4-bcf5-d4fccda826a4")
+		(property "Reference" "D18"
+			(at 126.238 28.956 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 121.158 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 118.11 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 118.11 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 118.11 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "598817bc-b49a-4106-aa81-29b431b967db")
+		)
+		(pin "2"
+			(uuid "a34c850c-96ba-4300-bcb7-8c49e9db20dd")
+		)
+		(pin "3"
+			(uuid "b907864a-4f0c-4172-834c-fc937ba879ab")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 199.39 29.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c041fa69-546b-4a4b-b455-e83a1f23ef88")
+		(property "Reference" "D50"
+			(at 207.518 28.956 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 202.438 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 199.39 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 199.39 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 199.39 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fae76f75-2635-4653-bd5d-faace03910b7")
+		)
+		(pin "2"
+			(uuid "c17b24b0-e816-4cd5-b9f8-14732ceb0aab")
+		)
+		(pin "3"
+			(uuid "408d8e16-8db2-44fd-bb45-d69144f6b8bd")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D50")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 138.43 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c5469159-11f8-4fcf-8205-10d919c0639a")
+		(property "Reference" "D28"
+			(at 146.558 61.976 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 141.478 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 138.43 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d79e4b1d-5ebd-4d9d-8c8f-f602a7495e08")
+		)
+		(pin "2"
+			(uuid "047b2670-4f05-4722-b1cf-788075c29937")
+		)
+		(pin "3"
+			(uuid "8ec8f8a1-3743-4fa6-b956-e6011abdae00")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 158.75 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cc8c65c3-3003-4b93-bbb6-219dc687df91")
+		(property "Reference" "D41"
+			(at 166.878 144.526 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 161.798 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 158.75 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 158.75 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 158.75 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1729e89b-3a16-4c8d-a8c8-6a6189913681")
+		)
+		(pin "2"
+			(uuid "69cd0493-e742-4b59-bc1c-9e6760bd3c5d")
+		)
+		(pin "3"
+			(uuid "e226269a-9b9f-49bf-92ae-6f9d38e5619c")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 77.47 29.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ce7d030b-cf37-47ae-a8bd-2d34e56d32d2")
+		(property "Reference" "D2"
+			(at 85.598 28.956 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 80.518 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 77.47 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 77.47 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 77.47 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5415eaab-9f6b-4020-b75f-76a805e60285")
+		)
+		(pin "2"
+			(uuid "d49dd9f3-9cb2-466c-8b32-9d5a5b3a77d6")
+		)
+		(pin "3"
+			(uuid "03322b7b-6feb-45ac-a69e-444f8646927c")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 158.75 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d0b74e3c-846e-442a-819f-7e372fba0e47")
+		(property "Reference" "D37"
+			(at 166.878 78.486 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 161.798 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 158.75 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 158.75 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 158.75 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "eed04165-b929-4635-ab5a-8733d71be36f")
+		)
+		(pin "2"
+			(uuid "7e6c42d5-c616-4823-891c-f07013c4079d")
+		)
+		(pin "3"
+			(uuid "fd5042cd-cba2-474d-9d0b-311824fbe4c1")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 199.39 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d5c9e369-ef91-4c11-b338-9ec1dc2cfffc")
+		(property "Reference" "D54"
+			(at 207.518 94.996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 202.438 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 199.39 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 199.39 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 199.39 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fd666a4e-5b62-4a77-b445-5cd4222de75c")
+		)
+		(pin "2"
+			(uuid "5ea2ceed-060e-45d6-9e5e-3ad7432e57cf")
+		)
+		(pin "3"
+			(uuid "d60a6efb-6de7-4b57-87a2-810589e597de")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D54")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 219.71 45.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e344593f-24a7-49ee-a495-589a226562bf")
+		(property "Reference" "D59"
+			(at 227.838 45.466 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 222.758 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 219.71 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 219.71 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 219.71 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "73073b30-6043-41b6-8a28-aa2f1470769a")
+		)
+		(pin "2"
+			(uuid "f194fc12-cc58-409a-a599-e91507bc1435")
+		)
+		(pin "3"
+			(uuid "56cd0a3b-3fd1-48b4-a38b-1c1bd4d608cb")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D59")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 158.75 29.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "eadefa62-467b-4059-b44c-fee5bef61add")
+		(property "Reference" "D34"
+			(at 166.878 28.956 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 161.798 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 158.75 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 158.75 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 158.75 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9f552719-fd52-4b00-a6be-57086a8f1477")
+		)
+		(pin "2"
+			(uuid "9678e9e2-afb8-49cb-b341-c67b8e70912c")
+		)
+		(pin "3"
+			(uuid "5d3f4096-5a48-404a-af17-abb5481cd63e")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 97.79 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f36a17e8-0c5d-4b0f-825e-2f7ad613218c")
+		(property "Reference" "D14"
+			(at 105.918 94.996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 100.838 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 97.79 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 97.79 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 97.79 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "92e38495-31a1-49c4-a769-bf6b515fd363")
+		)
+		(pin "2"
+			(uuid "ce950d83-96b9-4383-90e5-df3e7b06554c")
+		)
+		(pin "3"
+			(uuid "85a6ae9e-8f3a-4582-8176-e634ff91770e")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 97.79 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f676dbca-efad-4b46-925f-8fbbe7f658f4")
+		(property "Reference" "D16"
+			(at 105.918 128.016 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 100.838 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 97.79 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 97.79 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 97.79 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ebc5f50a-7774-4e61-9df1-4f8874996af2")
+		)
+		(pin "2"
+			(uuid "d175aaaa-e06b-4c7d-8d80-c31fee9dc1e1")
+		)
+		(pin "3"
+			(uuid "8a3d15a0-2f57-45c2-9007-a11a9fe86f49")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 97.79 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f7512398-0926-4a3f-bd40-47bd40241555")
+		(property "Reference" "D12"
+			(at 105.918 61.976 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 100.838 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 97.79 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 97.79 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 97.79 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4c37f355-b034-4225-8c22-936a648c01b5")
+		)
+		(pin "2"
+			(uuid "25cc0702-54da-41d3-9328-5fbfa9379dde")
+		)
+		(pin "3"
+			(uuid "78719c43-d0af-4982-9ce8-5e6a97d87b5d")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 179.07 29.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fdc4f802-909c-48d6-a7a1-f07694000f11")
+		(property "Reference" "D42"
+			(at 187.198 28.956 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 182.118 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 179.07 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 179.07 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 179.07 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "92655367-ca7d-481a-8085-d4d33b556e6e")
+		)
+		(pin "2"
+			(uuid "735a235f-85de-4883-ae17-07a846bb7aaa")
+		)
+		(pin "3"
+			(uuid "5f7592a6-3335-4bd1-8bb5-bbba44de3ddd")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 179.07 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fdd50532-1357-4fbf-b2e2-cf4180ee7fc2")
+		(property "Reference" "D47"
+			(at 187.198 111.506 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 182.118 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 179.07 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 179.07 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 179.07 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "67be57e4-eb74-4b6d-bb2b-b420dfe50fa5")
+		)
+		(pin "2"
+			(uuid "cc459a9d-b4c7-4564-88ab-33353f84fb87")
+		)
+		(pin "3"
+			(uuid "b3d4ad43-4544-48c9-bd93-0c3dde52bf5b")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D47")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AKA")
+		(at 219.71 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fe5ee548-e2c7-4d95-9a46-9c5aaade38c0")
+		(property "Reference" "D60"
+			(at 227.838 61.976 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_RG"
+			(at 222.758 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 219.71 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 219.71 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual LED, common cathode on pin 2"
+			(at 219.71 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c7eaaf4f-1fbd-424d-bcb2-862fd3f62185")
+		)
+		(pin "2"
+			(uuid "062cb107-1c93-4427-95fc-d4e911dd1e7c")
+		)
+		(pin "3"
+			(uuid "88ecf2f9-d50c-4396-884a-6682a1973f07")
+		)
+		(instances
+			(project "Analog_Digital_Clock"
+				(path "/60ed7847-1196-4e92-b0f3-d16fe5eaed74/5ef06f6a-97ce-4229-92ac-38481ec6c618"
+					(reference "D60")
+					(unit 1)
+				)
+			)
+		)
+	)
+)
